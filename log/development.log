@@ -1,0 +1,1754 @@
+Started GET "/" for 127.0.0.1 at 2019-06-28 14:22:25 +0300
+  [1m[35m (1.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/ceren/.gem/ruby/2.5.0/gems/railties-6.0.0.rc1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/ceren/.gem/ruby/2.5.0/gems/railties-6.0.0.rc1/lib/rails/templates/rails/welcome/index.html.erb (Duration: 4.3ms | Allocations: 461)
+Completed 200 OK in 10ms (Views: 5.8ms | ActiveRecord: 0.0ms | Allocations: 2710)
+
+
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (7.8ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (4.6ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateItems (20190628112744)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE TABLE "items" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "description" text, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20190628112744"]]
+  [1m[35m (5.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.2ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2019-06-28 11:29:05.539704"], ["updated_at", "2019-06-28 11:29:05.539704"]]
+  [1m[35m (4.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/" for 127.0.0.1 at 2019-06-28 14:38:59 +0300
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/ceren/.gem/ruby/2.5.0/gems/railties-6.0.0.rc1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/ceren/.gem/ruby/2.5.0/gems/railties-6.0.0.rc1/lib/rails/templates/rails/welcome/index.html.erb (Duration: 4.1ms | Allocations: 461)
+Completed 200 OK in 10ms (Views: 5.5ms | ActiveRecord: 0.0ms | Allocations: 2709)
+
+
+DEPRECATION WARNING: Using `bin/rake routes` is deprecated and will be removed in Rails 6.1. Use `bin/rails routes` instead.
+ (called from block in execute at /home/ceren/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/rake-12.3.2/lib/rake/task.rb:273)
+DEPRECATION WARNING: Using `bin/rake routes` is deprecated and will be removed in Rails 6.1. Use `bin/rails routes` instead.
+ (called from block in execute at /home/ceren/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/rake-12.3.2/lib/rake/task.rb:273)
+Started GET "/" for 127.0.0.1 at 2019-06-28 14:50:54 +0300
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ItemsController#index as HTML
+  Rendering items/index.html.erb within layouts/application
+  Rendered items/index.html.erb within layouts/application (Duration: 0.4ms | Allocations: 345)
+[Webpacker] Compiling…
+[Webpacker] Compiled all packs in /home/ceren/Desktop/RoR/hiptime/public/packs
+Completed 200 OK in 4531ms (Views: 4526.6ms | ActiveRecord: 0.0ms | Allocations: 3763203)
+
+
+DEPRECATION WARNING: Using `bin/rake routes` is deprecated and will be removed in Rails 6.1. Use `bin/rails routes` instead.
+ (called from block in execute at /home/ceren/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/rake-12.3.2/lib/rake/task.rb:273)
+Started GET "/items/new" for 127.0.0.1 at 2019-06-28 15:24:32 +0300
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by ItemsController#new as HTML
+  Rendering items/new.html.erb within layouts/application
+  Rendered items/new.html.erb within layouts/application (Duration: 0.2ms | Allocations: 86)
+Completed 200 OK in 15ms (Views: 9.7ms | ActiveRecord: 0.5ms | Allocations: 18420)
+
+
+Started GET "/items/new" for 127.0.0.1 at 2019-06-28 15:36:03 +0300
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by ItemsController#new as HTML
+  Rendering items/new.html.erb within layouts/application
+  Rendered items/_form.html.erb (Duration: 24.8ms | Allocations: 21755)
+  Rendered items/new.html.erb within layouts/application (Duration: 25.2ms | Allocations: 22085)
+Completed 200 OK in 37ms (Views: 33.0ms | ActiveRecord: 0.4ms | Allocations: 39972)
+
+
+Started GET "/items/new" for 127.0.0.1 at 2019-06-28 15:36:49 +0300
+Processing by ItemsController#new as HTML
+  Rendering items/new.html.erb within layouts/application
+  Rendered items/_form.html.erb (Duration: 16.7ms | Allocations: 6207)
+  Rendered items/new.html.erb within layouts/application (Duration: 18.1ms | Allocations: 6529)
+Completed 200 OK in 34ms (Views: 32.6ms | ActiveRecord: 0.0ms | Allocations: 20422)
+
+
+Started GET "/items/new" for 127.0.0.1 at 2019-06-28 15:38:01 +0300
+Processing by ItemsController#new as HTML
+  Rendering items/new.html.erb within layouts/application
+  Rendered items/_form.html.erb (Duration: 6.5ms | Allocations: 6030)
+  Rendered items/new.html.erb within layouts/application (Duration: 7.3ms | Allocations: 6353)
+Completed 200 OK in 18ms (Views: 16.5ms | ActiveRecord: 0.0ms | Allocations: 20259)
+
+
+Started POST "/items" for 127.0.0.1 at 2019-06-28 15:39:18 +0300
+Processing by ItemsController#create as HTML
+  Parameters: {"authenticity_token"=>"4dl6l9TZJsOFAyfabJxWkG8SHuOEGGOfJYqO2lFobTqGvOCPYxR4zRP3NaxFhEGF6GhXojQXT2QwZNQ/Zzhi9A==", "item"=>{"title"=>"First Item", "description"=>"Typewriter schlitz brunch, iPhone viral squid mumblecore pour-over DIY lyft XOXO butcher. Hexagon flexitarian tumblr, plaid semiotics humblebrag cred celiac twee asymmetrical mumblecore organic chillwave microdosing. Crucifix activated charcoal plaid tattooed stumptown affogato palo santo gochujang bespoke flexitarian. Cornhole celiac authentic, taxidermy keytar franzen green juice gentrify synth four loko. Selfies helvetica everyday carry viral, meh tousled bushwick."}, "commit"=>"Create Item"}
+No template found for ItemsController#create, rendering head :no_content
+Completed 204 No Content in 3ms (ActiveRecord: 0.0ms | Allocations: 1778)
+
+
+Started GET "/items/new" for 127.0.0.1 at 2019-06-28 15:43:52 +0300
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by ItemsController#new as HTML
+  Rendering items/new.html.erb within layouts/application
+  Rendered items/_form.html.erb (Duration: 6.1ms | Allocations: 5847)
+  Rendered items/new.html.erb within layouts/application (Duration: 6.2ms | Allocations: 5922)
+Completed 200 OK in 20ms (Views: 15.3ms | ActiveRecord: 0.4ms | Allocations: 23054)
+
+
+Started GET "/items/new" for 127.0.0.1 at 2019-06-28 15:43:56 +0300
+Processing by ItemsController#new as HTML
+  Rendering items/new.html.erb within layouts/application
+  Rendered items/_form.html.erb (Duration: 9.2ms | Allocations: 5858)
+  Rendered items/new.html.erb within layouts/application (Duration: 9.4ms | Allocations: 5933)
+Completed 200 OK in 18ms (Views: 16.5ms | ActiveRecord: 0.0ms | Allocations: 18894)
+
+
+Started POST "/items" for 127.0.0.1 at 2019-06-28 15:43:57 +0300
+Processing by ItemsController#create as HTML
+  Parameters: {"authenticity_token"=>"uyNRjsG5Z7cfh7OynJgcaVFaCuBbe7jTxqYlAdT255rcRsuWdnQ5uYlzocS1gAt81iBDoet0lCjTSH/k4qboVA==", "item"=>{"title"=>"First Item", "description"=>"Typewriter schlitz brunch, iPhone viral squid mumblecore pour-over DIY lyft XOXO butcher. Hexagon flexitarian tumblr, plaid semiotics humblebrag cred celiac twee asymmetrical mumblecore organic chillwave microdosing. Crucifix activated charcoal plaid tattooed stumptown affogato palo santo gochujang bespoke flexitarian. Cornhole celiac authentic, taxidermy keytar franzen green juice gentrify synth four loko. Selfies helvetica everyday carry viral, meh tousled bushwick."}, "commit"=>"Create Item"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/items_controller.rb:12:in `create'
+  [1m[36mItem Create (0.8ms)[0m  [1m[32mINSERT INTO "items" ("title", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "First Item"], ["description", "Typewriter schlitz brunch, iPhone viral squid mumblecore pour-over DIY lyft XOXO butcher. Hexagon flexitarian tumblr, plaid semiotics humblebrag cred celiac twee asymmetrical mumblecore organic chillwave microdosing. Crucifix activated charcoal plaid tattooed stumptown affogato palo santo gochujang bespoke flexitarian. Cornhole celiac authentic, taxidermy keytar franzen green juice gentrify synth four loko. Selfies helvetica everyday carry viral, meh tousled bushwick."], ["created_at", "2019-06-28 12:43:57.623636"], ["updated_at", "2019-06-28 12:43:57.623636"]]
+  ↳ app/controllers/items_controller.rb:12:in `create'
+  [1m[35m (5.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/items_controller.rb:12:in `create'
+Redirected to http://localhost:3000/
+Completed 302 Found in 21ms (ActiveRecord: 6.4ms | Allocations: 4422)
+
+
+Started GET "/" for 127.0.0.1 at 2019-06-28 15:43:57 +0300
+Processing by ItemsController#index as HTML
+  Rendering items/index.html.erb within layouts/application
+  Rendered items/index.html.erb within layouts/application (Duration: 0.6ms | Allocations: 88)
+Completed 200 OK in 13ms (Views: 11.8ms | ActiveRecord: 0.0ms | Allocations: 13364)
+
+
+Started GET "/" for 127.0.0.1 at 2019-06-28 15:45:38 +0300
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by ItemsController#index as HTML
+  Rendering items/index.html.erb within layouts/application
+  Rendered items/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 83)
+Completed 200 OK in 12ms (Views: 9.1ms | ActiveRecord: 0.0ms | Allocations: 14543)
+
+
+DEPRECATION WARNING: Using `bin/rake routes` is deprecated and will be removed in Rails 6.1. Use `bin/rails routes` instead.
+ (called from block in execute at /home/ceren/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/rake-12.3.2/lib/rake/task.rb:273)
+Started GET "/" for 127.0.0.1 at 2019-06-28 15:49:25 +0300
+Processing by ItemsController#index as HTML
+  Rendering items/index.html.erb within layouts/application
+  [1m[36mItem Load (0.4ms)[0m  [1m[34mSELECT "items".* FROM "items" ORDER BY created_at DESC[0m
+  ↳ app/views/items/index.html.erb:3
+  Rendered items/index.html.erb within layouts/application (Duration: 16.6ms | Allocations: 4597)
+Completed 200 OK in 35ms (Views: 30.4ms | ActiveRecord: 2.5ms | Allocations: 18711)
+
+
+Started GET "/items/new" for 127.0.0.1 at 2019-06-28 15:49:29 +0300
+Processing by ItemsController#new as HTML
+  Rendering items/new.html.erb within layouts/application
+  Rendered items/_form.html.erb (Duration: 6.9ms | Allocations: 6085)
+  Rendered items/new.html.erb within layouts/application (Duration: 7.7ms | Allocations: 6408)
+Completed 200 OK in 17ms (Views: 15.7ms | ActiveRecord: 0.0ms | Allocations: 19516)
+
+
+Started POST "/items" for 127.0.0.1 at 2019-06-28 15:49:53 +0300
+Processing by ItemsController#create as HTML
+  Parameters: {"authenticity_token"=>"vh7ZvWpXBhpVWKrJwhR+CUI6ZS9Sm7PzjDp7i2heVagEjc0A6w+D16/2a26N00yBqUwF6835zckto5Zi27RHvQ==", "item"=>{"title"=>"Better Item", "description"=>"Occupy skateboard you probably haven't heard of them, live-edge bespoke kinfolk vaporware 8-bit brunch kitsch street art dreamcatcher. Put a bird on it distillery plaid, godard succulents poke beard craft beer pickled quinoa coloring book taiyaki. Coloring book meh brooklyn occupy flexitarian lyft cardigan before they sold out marfa snackwave. Hashtag etsy salvia, literally man braid cliche readymade snackwave cred yr hella four loko. Hexagon hashtag pitchfork cornhole blog taxidermy. Leggings bespoke keytar, fashion axe meggings single-origin coffee tousled irony banh mi selfies kombucha."}, "commit"=>"Create Item"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/items_controller.rb:13:in `create'
+  [1m[36mItem Create (0.5ms)[0m  [1m[32mINSERT INTO "items" ("title", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "Better Item"], ["description", "Occupy skateboard you probably haven't heard of them, live-edge bespoke kinfolk vaporware 8-bit brunch kitsch street art dreamcatcher. Put a bird on it distillery plaid, godard succulents poke beard craft beer pickled quinoa coloring book taiyaki. Coloring book meh brooklyn occupy flexitarian lyft cardigan before they sold out marfa snackwave. Hashtag etsy salvia, literally man braid cliche readymade snackwave cred yr hella four loko. Hexagon hashtag pitchfork cornhole blog taxidermy. Leggings bespoke keytar, fashion axe meggings single-origin coffee tousled irony banh mi selfies kombucha."], ["created_at", "2019-06-28 12:49:53.592948"], ["updated_at", "2019-06-28 12:49:53.592948"]]
+  ↳ app/controllers/items_controller.rb:13:in `create'
+  [1m[35m (4.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/items_controller.rb:13:in `create'
+Redirected to http://localhost:3000/
+Completed 302 Found in 15ms (ActiveRecord: 5.1ms | Allocations: 4259)
+
+
+Started GET "/" for 127.0.0.1 at 2019-06-28 15:49:53 +0300
+Processing by ItemsController#index as HTML
+  Rendering items/index.html.erb within layouts/application
+  [1m[36mItem Load (0.2ms)[0m  [1m[34mSELECT "items".* FROM "items" ORDER BY created_at DESC[0m
+  ↳ app/views/items/index.html.erb:3
+  Rendered items/index.html.erb within layouts/application (Duration: 1.3ms | Allocations: 790)
+Completed 200 OK in 12ms (Views: 11.4ms | ActiveRecord: 0.2ms | Allocations: 13968)
+
+
+Started GET "/" for 127.0.0.1 at 2019-06-28 15:51:13 +0300
+Processing by ItemsController#index as HTML
+  Rendering items/index.html.erb within layouts/application
+  [1m[36mItem Load (0.2ms)[0m  [1m[34mSELECT "items".* FROM "items" ORDER BY created_at DESC[0m
+  ↳ app/views/items/index.html.erb:3
+  Rendered items/index.html.erb within layouts/application (Duration: 7.1ms | Allocations: 7573)
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.2ms | Allocations: 8925)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"show", :controller=>"items"}, missing required keys: [:id]):
+    1: <!-- <h1> Woop !!! </h1> -->
+    2: 
+    3: <% @items.each do |item| %>
+    4: 	<h2><%= link_to item.title, item_path %></h2>
+    5: 	<p><%= item.description %></p>
+    6: <% end %>
+    7: 
+  
+app/views/items/index.html.erb:4
+app/views/items/index.html.erb:3
+Started GET "/" for 127.0.0.1 at 2019-06-28 15:51:45 +0300
+Processing by ItemsController#index as HTML
+  Rendering items/index.html.erb within layouts/application
+  [1m[36mItem Load (0.1ms)[0m  [1m[34mSELECT "items".* FROM "items" ORDER BY created_at DESC[0m
+  ↳ app/views/items/index.html.erb:3
+  Rendered items/index.html.erb within layouts/application (Duration: 1.5ms | Allocations: 1028)
+Completed 200 OK in 12ms (Views: 10.4ms | ActiveRecord: 0.1ms | Allocations: 15186)
+
+
+Started GET "/items/2" for 127.0.0.1 at 2019-06-28 15:51:46 +0300
+  
+AbstractController::ActionNotFound (The action 'show' could not be found for ItemsController):
+  
+actionpack (6.0.0.rc1) lib/abstract_controller/base.rb:131:in `process'
+actionview (6.0.0.rc1) lib/action_view/rendering.rb:39:in `process'
+actionpack (6.0.0.rc1) lib/action_controller/metal.rb:191:in `dispatch'
+actionpack (6.0.0.rc1) lib/action_controller/metal.rb:252:in `dispatch'
+actionpack (6.0.0.rc1) lib/action_dispatch/routing/route_set.rb:51:in `dispatch'
+actionpack (6.0.0.rc1) lib/action_dispatch/routing/route_set.rb:33:in `serve'
+actionpack (6.0.0.rc1) lib/action_dispatch/journey/router.rb:49:in `block in serve'
+actionpack (6.0.0.rc1) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (6.0.0.rc1) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (6.0.0.rc1) lib/action_dispatch/routing/route_set.rb:837:in `call'
+rack (2.0.7) lib/rack/tempfile_reaper.rb:15:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:57:in `block in call'
+activesupport (6.0.0.rc1) lib/active_support/notifications.rb:182:in `instrument'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:56:in `call'
+rack (2.0.7) lib/rack/etag.rb:25:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:57:in `block in call'
+activesupport (6.0.0.rc1) lib/active_support/notifications.rb:182:in `instrument'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:56:in `call'
+rack (2.0.7) lib/rack/conditional_get.rb:25:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:57:in `block in call'
+activesupport (6.0.0.rc1) lib/active_support/notifications.rb:182:in `instrument'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:56:in `call'
+rack (2.0.7) lib/rack/head.rb:12:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:57:in `block in call'
+activesupport (6.0.0.rc1) lib/active_support/notifications.rb:182:in `instrument'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:56:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:57:in `block in call'
+activesupport (6.0.0.rc1) lib/active_support/notifications.rb:182:in `instrument'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:56:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:57:in `block in call'
+activesupport (6.0.0.rc1) lib/active_support/notifications.rb:182:in `instrument'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:56:in `call'
+rack (2.0.7) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.7) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:57:in `block in call'
+activesupport (6.0.0.rc1) lib/active_support/notifications.rb:182:in `instrument'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:56:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/cookies.rb:644:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:57:in `block in call'
+activesupport (6.0.0.rc1) lib/active_support/notifications.rb:182:in `instrument'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:56:in `call'
+activerecord (6.0.0.rc1) lib/active_record/migration.rb:567:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:57:in `block in call'
+activesupport (6.0.0.rc1) lib/active_support/notifications.rb:182:in `instrument'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:56:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.0.0.rc1) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:57:in `block in call'
+activesupport (6.0.0.rc1) lib/active_support/notifications.rb:182:in `instrument'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:56:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:57:in `block in call'
+activesupport (6.0.0.rc1) lib/active_support/notifications.rb:182:in `instrument'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:56:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:57:in `block in call'
+activesupport (6.0.0.rc1) lib/active_support/notifications.rb:182:in `instrument'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:56:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/debug_exceptions.rb:32:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:57:in `block in call'
+activesupport (6.0.0.rc1) lib/active_support/notifications.rb:182:in `instrument'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:56:in `call'
+web-console (4.0.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:57:in `block in call'
+activesupport (6.0.0.rc1) lib/active_support/notifications.rb:182:in `instrument'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:56:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:57:in `block in call'
+activesupport (6.0.0.rc1) lib/active_support/notifications.rb:182:in `instrument'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:56:in `call'
+railties (6.0.0.rc1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.0.rc1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.0.rc1) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.0.rc1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.0.rc1) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.0.rc1) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:57:in `block in call'
+activesupport (6.0.0.rc1) lib/active_support/notifications.rb:182:in `instrument'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:56:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:57:in `block in call'
+activesupport (6.0.0.rc1) lib/active_support/notifications.rb:182:in `instrument'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:56:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:57:in `block in call'
+activesupport (6.0.0.rc1) lib/active_support/notifications.rb:182:in `instrument'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:56:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:57:in `block in call'
+activesupport (6.0.0.rc1) lib/active_support/notifications.rb:182:in `instrument'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:56:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:57:in `block in call'
+activesupport (6.0.0.rc1) lib/active_support/notifications.rb:182:in `instrument'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:56:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:57:in `block in call'
+activesupport (6.0.0.rc1) lib/active_support/notifications.rb:182:in `instrument'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:56:in `call'
+activesupport (6.0.0.rc1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:57:in `block in call'
+activesupport (6.0.0.rc1) lib/active_support/notifications.rb:182:in `instrument'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:56:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:57:in `block in call'
+activesupport (6.0.0.rc1) lib/active_support/notifications.rb:182:in `instrument'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:56:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/static.rb:126:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:57:in `block in call'
+activesupport (6.0.0.rc1) lib/active_support/notifications.rb:182:in `instrument'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:56:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:57:in `block in call'
+activesupport (6.0.0.rc1) lib/active_support/notifications.rb:182:in `instrument'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:56:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:57:in `block in call'
+activesupport (6.0.0.rc1) lib/active_support/notifications.rb:182:in `instrument'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:56:in `call'
+webpacker (4.0.7) lib/webpacker/dev_server_proxy.rb:29:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:57:in `block in call'
+activesupport (6.0.0.rc1) lib/active_support/notifications.rb:182:in `instrument'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:56:in `call'
+railties (6.0.0.rc1) lib/rails/engine.rb:526:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2019-06-28 15:51:49 +0300
+Processing by ItemsController#index as HTML
+  Rendering items/index.html.erb within layouts/application
+  [1m[36mItem Load (0.2ms)[0m  [1m[34mSELECT "items".* FROM "items" ORDER BY created_at DESC[0m
+  ↳ app/views/items/index.html.erb:3
+  Rendered items/index.html.erb within layouts/application (Duration: 1.1ms | Allocations: 833)
+Completed 200 OK in 9ms (Views: 8.3ms | ActiveRecord: 0.2ms | Allocations: 14009)
+
+
+Started GET "/" for 127.0.0.1 at 2019-06-28 15:59:00 +0300
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by ItemsController#index as HTML
+  Rendering items/index.html.erb within layouts/application
+  [1m[36mItem Load (0.1ms)[0m  [1m[34mSELECT "items".* FROM "items" ORDER BY created_at DESC[0m
+  ↳ app/views/items/index.html.erb:3
+  Rendered items/index.html.erb within layouts/application (Duration: 6.3ms | Allocations: 4774)
+Completed 200 OK in 17ms (Views: 14.8ms | ActiveRecord: 0.5ms | Allocations: 19341)
+
+
+Started GET "/items" for 127.0.0.1 at 2019-06-28 15:59:10 +0300
+Processing by ItemsController#index as HTML
+  Rendering items/index.html.erb within layouts/application
+  [1m[36mItem Load (0.1ms)[0m  [1m[34mSELECT "items".* FROM "items" ORDER BY created_at DESC[0m
+  ↳ app/views/items/index.html.erb:3
+  Rendered items/index.html.erb within layouts/application (Duration: 1.1ms | Allocations: 866)
+Completed 200 OK in 9ms (Views: 8.7ms | ActiveRecord: 0.1ms | Allocations: 14040)
+
+
+Started GET "/items/2" for 127.0.0.1 at 2019-06-28 15:59:18 +0300
+Processing by ItemsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mItem Load (0.6ms)[0m  [1m[34mSELECT "items".* FROM "items" WHERE "items"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/items_controller.rb:34:in `find_item'
+  Rendering items/show.html.erb within layouts/application
+  Rendered items/show.html.erb within layouts/application (Duration: 0.8ms | Allocations: 201)
+Completed 200 OK in 25ms (Views: 14.3ms | ActiveRecord: 0.6ms | Allocations: 14834)
+
+
+Started GET "/" for 127.0.0.1 at 2019-06-28 15:59:24 +0300
+Processing by ItemsController#index as HTML
+  Rendering items/index.html.erb within layouts/application
+  [1m[36mItem Load (0.4ms)[0m  [1m[34mSELECT "items".* FROM "items" ORDER BY created_at DESC[0m
+  ↳ app/views/items/index.html.erb:3
+  Rendered items/index.html.erb within layouts/application (Duration: 3.4ms | Allocations: 830)
+Completed 200 OK in 33ms (Views: 31.3ms | ActiveRecord: 0.4ms | Allocations: 14014)
+
+
+DEPRECATION WARNING: Using `bin/rake routes` is deprecated and will be removed in Rails 6.1. Use `bin/rails routes` instead.
+ (called from block in execute at /home/ceren/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/rake-12.3.2/lib/rake/task.rb:273)
+Started GET "/items/2" for 127.0.0.1 at 2019-06-28 16:07:09 +0300
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by ItemsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mItem Load (0.1ms)[0m  [1m[34mSELECT "items".* FROM "items" WHERE "items"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/items_controller.rb:45:in `find_item'
+  Rendering items/show.html.erb within layouts/application
+  Rendered items/show.html.erb within layouts/application (Duration: 0.4ms | Allocations: 199)
+Completed 200 OK in 18ms (Views: 11.7ms | ActiveRecord: 0.5ms | Allocations: 19083)
+
+
+Started GET "/items/2/edit" for 127.0.0.1 at 2019-06-28 16:07:14 +0300
+Processing by ItemsController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mItem Load (0.1ms)[0m  [1m[34mSELECT "items".* FROM "items" WHERE "items"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/items_controller.rb:45:in `find_item'
+  Rendering items/edit.html.erb within layouts/application
+  Rendered items/_form.html.erb (Duration: 6.3ms | Allocations: 6237)
+  Rendered items/edit.html.erb within layouts/application (Duration: 7.0ms | Allocations: 6563)
+Completed 200 OK in 16ms (Views: 14.3ms | ActiveRecord: 0.1ms | Allocations: 20256)
+
+
+Started PATCH "/items/2" for 127.0.0.1 at 2019-06-28 16:07:36 +0300
+  
+AbstractController::ActionNotFound (The action 'update' could not be found for ItemsController):
+  
+actionpack (6.0.0.rc1) lib/abstract_controller/base.rb:131:in `process'
+actionview (6.0.0.rc1) lib/action_view/rendering.rb:39:in `process'
+actionpack (6.0.0.rc1) lib/action_controller/metal.rb:191:in `dispatch'
+actionpack (6.0.0.rc1) lib/action_controller/metal.rb:252:in `dispatch'
+actionpack (6.0.0.rc1) lib/action_dispatch/routing/route_set.rb:51:in `dispatch'
+actionpack (6.0.0.rc1) lib/action_dispatch/routing/route_set.rb:33:in `serve'
+actionpack (6.0.0.rc1) lib/action_dispatch/journey/router.rb:49:in `block in serve'
+actionpack (6.0.0.rc1) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (6.0.0.rc1) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (6.0.0.rc1) lib/action_dispatch/routing/route_set.rb:837:in `call'
+rack (2.0.7) lib/rack/tempfile_reaper.rb:15:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:57:in `block in call'
+activesupport (6.0.0.rc1) lib/active_support/notifications.rb:182:in `instrument'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:56:in `call'
+rack (2.0.7) lib/rack/etag.rb:25:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:57:in `block in call'
+activesupport (6.0.0.rc1) lib/active_support/notifications.rb:182:in `instrument'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:56:in `call'
+rack (2.0.7) lib/rack/conditional_get.rb:38:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:57:in `block in call'
+activesupport (6.0.0.rc1) lib/active_support/notifications.rb:182:in `instrument'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:56:in `call'
+rack (2.0.7) lib/rack/head.rb:12:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:57:in `block in call'
+activesupport (6.0.0.rc1) lib/active_support/notifications.rb:182:in `instrument'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:56:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:57:in `block in call'
+activesupport (6.0.0.rc1) lib/active_support/notifications.rb:182:in `instrument'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:56:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:57:in `block in call'
+activesupport (6.0.0.rc1) lib/active_support/notifications.rb:182:in `instrument'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:56:in `call'
+rack (2.0.7) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.7) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:57:in `block in call'
+activesupport (6.0.0.rc1) lib/active_support/notifications.rb:182:in `instrument'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:56:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/cookies.rb:644:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:57:in `block in call'
+activesupport (6.0.0.rc1) lib/active_support/notifications.rb:182:in `instrument'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:56:in `call'
+activerecord (6.0.0.rc1) lib/active_record/migration.rb:567:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:57:in `block in call'
+activesupport (6.0.0.rc1) lib/active_support/notifications.rb:182:in `instrument'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:56:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.0.0.rc1) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:57:in `block in call'
+activesupport (6.0.0.rc1) lib/active_support/notifications.rb:182:in `instrument'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:56:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:57:in `block in call'
+activesupport (6.0.0.rc1) lib/active_support/notifications.rb:182:in `instrument'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:56:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:57:in `block in call'
+activesupport (6.0.0.rc1) lib/active_support/notifications.rb:182:in `instrument'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:56:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/debug_exceptions.rb:32:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:57:in `block in call'
+activesupport (6.0.0.rc1) lib/active_support/notifications.rb:182:in `instrument'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:56:in `call'
+web-console (4.0.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:57:in `block in call'
+activesupport (6.0.0.rc1) lib/active_support/notifications.rb:182:in `instrument'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:56:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:57:in `block in call'
+activesupport (6.0.0.rc1) lib/active_support/notifications.rb:182:in `instrument'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:56:in `call'
+railties (6.0.0.rc1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.0.rc1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.0.rc1) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.0.rc1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.0.rc1) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.0.rc1) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:57:in `block in call'
+activesupport (6.0.0.rc1) lib/active_support/notifications.rb:182:in `instrument'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:56:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:57:in `block in call'
+activesupport (6.0.0.rc1) lib/active_support/notifications.rb:182:in `instrument'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:56:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:57:in `block in call'
+activesupport (6.0.0.rc1) lib/active_support/notifications.rb:182:in `instrument'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:56:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:57:in `block in call'
+activesupport (6.0.0.rc1) lib/active_support/notifications.rb:182:in `instrument'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:56:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:57:in `block in call'
+activesupport (6.0.0.rc1) lib/active_support/notifications.rb:182:in `instrument'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:56:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:57:in `block in call'
+activesupport (6.0.0.rc1) lib/active_support/notifications.rb:182:in `instrument'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:56:in `call'
+activesupport (6.0.0.rc1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:57:in `block in call'
+activesupport (6.0.0.rc1) lib/active_support/notifications.rb:182:in `instrument'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:56:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:57:in `block in call'
+activesupport (6.0.0.rc1) lib/active_support/notifications.rb:182:in `instrument'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:56:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/static.rb:126:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:57:in `block in call'
+activesupport (6.0.0.rc1) lib/active_support/notifications.rb:182:in `instrument'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:56:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:57:in `block in call'
+activesupport (6.0.0.rc1) lib/active_support/notifications.rb:182:in `instrument'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:56:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:57:in `block in call'
+activesupport (6.0.0.rc1) lib/active_support/notifications.rb:182:in `instrument'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:56:in `call'
+webpacker (4.0.7) lib/webpacker/dev_server_proxy.rb:29:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:57:in `block in call'
+activesupport (6.0.0.rc1) lib/active_support/notifications.rb:182:in `instrument'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:56:in `call'
+railties (6.0.0.rc1) lib/rails/engine.rb:526:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started PATCH "/items/2" for 127.0.0.1 at 2019-06-28 16:07:45 +0300
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by ItemsController#update as HTML
+  Parameters: {"authenticity_token"=>"bW+DTOJLwPQoLmZfczrU/mFzRzRunwxwCSBIIZZeofoKChlUVYae+r7adClaIsPr5gkOdd6QIIsczhLEoA6uNA==", "item"=>{"title"=>"Better Items", "description"=>"Occupy skateboard you probably haven't heard of them, live-edge bespoke kinfolk vaporware 8-bit brunch kitsch street art dreamcatcher. Put a bird on it distillery plaid, godard succulents poke beard craft beer pickled quinoa coloring book taiyaki. Coloring book meh brooklyn occupy flexitarian lyft cardigan before they sold out marfa snackwave. Hashtag etsy salvia, literally man braid cliche readymade snackwave cred yr hella four loko. Hexagon hashtag pitchfork cornhole blog taxidermy. Leggings bespoke keytar, fashion axe meggings single-origin coffee tousled irony banh mi selfies kombucha."}, "commit"=>"Update Item", "id"=>"2"}
+  [1m[36mItem Load (0.2ms)[0m  [1m[34mSELECT "items".* FROM "items" WHERE "items"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/items_controller.rb:45:in `find_item'
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/items_controller.rb:30:in `update'
+  [1m[36mItem Update (0.2ms)[0m  [1m[33mUPDATE "items" SET "title" = ?, "updated_at" = ? WHERE "items"."id" = ?[0m  [["title", "Better Items"], ["updated_at", "2019-06-28 13:07:45.799430"], ["id", 2]]
+  ↳ app/controllers/items_controller.rb:30:in `update'
+  [1m[35m (6.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/items_controller.rb:30:in `update'
+Redirected to http://localhost:3000/items/2
+Completed 302 Found in 16ms (ActiveRecord: 7.1ms | Allocations: 9252)
+
+
+Started GET "/items/2" for 127.0.0.1 at 2019-06-28 16:07:45 +0300
+Processing by ItemsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mItem Load (0.1ms)[0m  [1m[34mSELECT "items".* FROM "items" WHERE "items"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/items_controller.rb:45:in `find_item'
+  Rendering items/show.html.erb within layouts/application
+  Rendered items/show.html.erb within layouts/application (Duration: 0.3ms | Allocations: 60)
+Completed 200 OK in 10ms (Views: 8.9ms | ActiveRecord: 0.1ms | Allocations: 13955)
+
+
+Started GET "/items/2" for 127.0.0.1 at 2019-06-28 16:11:53 +0300
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by ItemsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mItem Load (0.1ms)[0m  [1m[34mSELECT "items".* FROM "items" WHERE "items"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/items_controller.rb:50:in `find_item'
+  Rendering items/show.html.erb within layouts/application
+  Rendered items/show.html.erb within layouts/application (Duration: 0.6ms | Allocations: 318)
+Completed 200 OK in 16ms (Views: 9.6ms | ActiveRecord: 0.6ms | Allocations: 19198)
+
+
+Started GET "/items/2/edit" for 127.0.0.1 at 2019-06-28 16:12:01 +0300
+Processing by ItemsController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mItem Load (0.2ms)[0m  [1m[34mSELECT "items".* FROM "items" WHERE "items"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/items_controller.rb:50:in `find_item'
+  Rendering items/edit.html.erb within layouts/application
+  Rendered items/_form.html.erb (Duration: 12.9ms | Allocations: 6161)
+  Rendered items/edit.html.erb within layouts/application (Duration: 14.3ms | Allocations: 6487)
+Completed 200 OK in 27ms (Views: 23.1ms | ActiveRecord: 0.2ms | Allocations: 20182)
+
+
+Started DELETE "/items/2" for 127.0.0.1 at 2019-06-28 16:12:33 +0300
+Processing by ItemsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"NnvbF6JkC1IHBh18VLkYdnei1s6dBsET75OGmqw1bcNRHkEPFalVXJHyDwp9oQ9j8Nifjy0J7ej6fdx/mmViDQ==", "id"=>"2"}
+  [1m[36mItem Load (0.1ms)[0m  [1m[34mSELECT "items".* FROM "items" WHERE "items"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/items_controller.rb:50:in `find_item'
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/items_controller.rb:38:in `destroy'
+  [1m[36mItem Destroy (0.2ms)[0m  [1m[31mDELETE FROM "items" WHERE "items"."id" = ?[0m  [["id", 2]]
+  ↳ app/controllers/items_controller.rb:38:in `destroy'
+  [1m[35m (6.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/items_controller.rb:38:in `destroy'
+Redirected to http://localhost:3000/
+Completed 302 Found in 10ms (ActiveRecord: 6.7ms | Allocations: 4213)
+
+
+Started GET "/" for 127.0.0.1 at 2019-06-28 16:12:33 +0300
+Processing by ItemsController#index as HTML
+  Rendering items/index.html.erb within layouts/application
+  [1m[36mItem Load (0.1ms)[0m  [1m[34mSELECT "items".* FROM "items" ORDER BY created_at DESC[0m
+  ↳ app/views/items/index.html.erb:3
+  Rendered items/index.html.erb within layouts/application (Duration: 1.1ms | Allocations: 971)
+Completed 200 OK in 9ms (Views: 8.5ms | ActiveRecord: 0.1ms | Allocations: 14291)
+
+
+Started GET "/items/1" for 127.0.0.1 at 2019-06-28 16:12:36 +0300
+Processing by ItemsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mItem Load (0.1ms)[0m  [1m[34mSELECT "items".* FROM "items" WHERE "items"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/items_controller.rb:50:in `find_item'
+  Rendering items/show.html.erb within layouts/application
+  Rendered items/show.html.erb within layouts/application (Duration: 0.2ms | Allocations: 127)
+Completed 200 OK in 11ms (Views: 10.0ms | ActiveRecord: 0.1ms | Allocations: 13870)
+
+
+Started GET "/items/new" for 127.0.0.1 at 2019-06-28 16:12:50 +0300
+Processing by ItemsController#new as HTML
+  Rendering items/new.html.erb within layouts/application
+  Rendered items/_form.html.erb (Duration: 6.9ms | Allocations: 5899)
+  Rendered items/new.html.erb within layouts/application (Duration: 7.3ms | Allocations: 6082)
+Completed 200 OK in 17ms (Views: 16.0ms | ActiveRecord: 0.0ms | Allocations: 19195)
+
+
+Started POST "/items" for 127.0.0.1 at 2019-06-28 16:13:17 +0300
+Processing by ItemsController#create as HTML
+  Parameters: {"authenticity_token"=>"LJBwPshPr0+Bi0352SffeIfGgcUEzjlgOxliSdbPn+iWA2SDSRcqgnsljF6W4O3wbLDhAZusR1qagI+gZSWN/Q==", "item"=>{"title"=>"Second Item", "description"=>"Typewriter schlitz brunch, iPhone viral squid mumblecore pour-over DIY lyft XOXO butcher. Hexagon flexitarian tumblr, plaid semiotics humblebrag cred celiac twee asymmetrical mumblecore organic chillwave microdosing. Crucifix activated charcoal plaid tattooed stumptown affogato palo santo gochujang bespoke flexitarian. Cornhole celiac authentic, taxidermy keytar franzen green juice gentrify synth four loko. Selfies helvetica everyday carry viral, meh tousled bushwick."}, "commit"=>"Create Item"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/items_controller.rb:19:in `create'
+  [1m[36mItem Create (0.3ms)[0m  [1m[32mINSERT INTO "items" ("title", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "Second Item"], ["description", "Typewriter schlitz brunch, iPhone viral squid mumblecore pour-over DIY lyft XOXO butcher. Hexagon flexitarian tumblr, plaid semiotics humblebrag cred celiac twee asymmetrical mumblecore organic chillwave microdosing. Crucifix activated charcoal plaid tattooed stumptown affogato palo santo gochujang bespoke flexitarian. Cornhole celiac authentic, taxidermy keytar franzen green juice gentrify synth four loko. Selfies helvetica everyday carry viral, meh tousled bushwick."], ["created_at", "2019-06-28 13:13:17.040696"], ["updated_at", "2019-06-28 13:13:17.040696"]]
+  ↳ app/controllers/items_controller.rb:19:in `create'
+  [1m[35m (4.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/items_controller.rb:19:in `create'
+Redirected to http://localhost:3000/
+Completed 302 Found in 12ms (ActiveRecord: 4.6ms | Allocations: 4250)
+
+
+Started GET "/" for 127.0.0.1 at 2019-06-28 16:13:17 +0300
+Processing by ItemsController#index as HTML
+  Rendering items/index.html.erb within layouts/application
+  [1m[36mItem Load (0.4ms)[0m  [1m[34mSELECT "items".* FROM "items" ORDER BY created_at DESC[0m
+  ↳ app/views/items/index.html.erb:3
+  Rendered items/index.html.erb within layouts/application (Duration: 2.5ms | Allocations: 830)
+Completed 200 OK in 22ms (Views: 19.8ms | ActiveRecord: 0.4ms | Allocations: 14012)
+
+
+Started GET "/items/new" for 127.0.0.1 at 2019-06-28 16:13:31 +0300
+Processing by ItemsController#new as HTML
+  Rendering items/new.html.erb within layouts/application
+  Rendered items/_form.html.erb (Duration: 10.0ms | Allocations: 5890)
+  Rendered items/new.html.erb within layouts/application (Duration: 10.2ms | Allocations: 5965)
+Completed 200 OK in 18ms (Views: 17.7ms | ActiveRecord: 0.0ms | Allocations: 18939)
+
+
+Started POST "/items" for 127.0.0.1 at 2019-06-28 16:13:55 +0300
+Processing by ItemsController#create as HTML
+  Parameters: {"authenticity_token"=>"GOelRopy3ZN+24XYeKT/XEAqm1PbMiGP3c0wfJteJV6idLH7CypYXoR1RH83Y83Uq1z7l0RQX7V8VN2VKLQ3Sw==", "item"=>{"title"=>"Third Item", "description"=>"Sartorial gentrify organic subway tile neutra polaroid farm-to-table 3 wolf moon. Wolf occupy keffiyeh VHS poutine kogi tote bag chillwave iPhone woke palo santo before they sold out lo-fi. Marfa bushwick iPhone air plant heirloom church-key slow-carb. Squid hella tote bag man braid swag cold-pressed master cleanse roof party retro meh helvetica venmo. Forage +1 before they sold out, green juice wolf etsy tilde trust fund kickstarter sustainable narwhal pitchfork tumeric iceland celiac. Tote bag raclette succulents franzen."}, "commit"=>"Create Item"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/items_controller.rb:19:in `create'
+  [1m[36mItem Create (0.3ms)[0m  [1m[32mINSERT INTO "items" ("title", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "Third Item"], ["description", "Sartorial gentrify organic subway tile neutra polaroid farm-to-table 3 wolf moon. Wolf occupy keffiyeh VHS poutine kogi tote bag chillwave iPhone woke palo santo before they sold out lo-fi. Marfa bushwick iPhone air plant heirloom church-key slow-carb. Squid hella tote bag man braid swag cold-pressed master cleanse roof party retro meh helvetica venmo. Forage +1 before they sold out, green juice wolf etsy tilde trust fund kickstarter sustainable narwhal pitchfork tumeric iceland celiac. Tote bag raclette succulents franzen."], ["created_at", "2019-06-28 13:13:55.685956"], ["updated_at", "2019-06-28 13:13:55.685956"]]
+  ↳ app/controllers/items_controller.rb:19:in `create'
+  [1m[35m (4.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/items_controller.rb:19:in `create'
+Redirected to http://localhost:3000/
+Completed 302 Found in 10ms (ActiveRecord: 4.3ms | Allocations: 4215)
+
+
+Started GET "/" for 127.0.0.1 at 2019-06-28 16:13:55 +0300
+Processing by ItemsController#index as HTML
+  Rendering items/index.html.erb within layouts/application
+  [1m[36mItem Load (0.2ms)[0m  [1m[34mSELECT "items".* FROM "items" ORDER BY created_at DESC[0m
+  ↳ app/views/items/index.html.erb:3
+  Rendered items/index.html.erb within layouts/application (Duration: 1.4ms | Allocations: 874)
+Completed 200 OK in 15ms (Views: 13.8ms | ActiveRecord: 0.2ms | Allocations: 14060)
+
+
+Started GET "/items/new" for 127.0.0.1 at 2019-06-28 16:13:58 +0300
+Processing by ItemsController#new as HTML
+  Rendering items/new.html.erb within layouts/application
+  Rendered items/_form.html.erb (Duration: 7.5ms | Allocations: 5890)
+  Rendered items/new.html.erb within layouts/application (Duration: 7.8ms | Allocations: 5965)
+Completed 200 OK in 16ms (Views: 15.3ms | ActiveRecord: 0.0ms | Allocations: 18937)
+
+
+Started POST "/items" for 127.0.0.1 at 2019-06-28 16:14:30 +0300
+Processing by ItemsController#create as HTML
+  Parameters: {"authenticity_token"=>"gPbpw9twaNR4dfbbk/eaINbYPXaemrUX2tEqMoBB1086Zf1+WijtGYLbN3zcMKioPa5dsgH4yy17SMfbM6vFWg==", "item"=>{"title"=>"Fourth Item", "description"=>"Lorem ipsum dolor amet swag authentic kitsch chicharrones freegan small batch trust fund copper mug chia thundercats bespoke listicle kickstarter iceland. Raclette cold-pressed lyft, scenester wayfarers waistcoat subway tile tote bag fanny pack keffiyeh YOLO cliche lo-fi narwhal occupy. Adaptogen retro vinyl brunch. Artisan single-origin coffee stumptown tote bag, crucifix authentic neutra etsy gochujang gastropub jianbing pour-over gluten-free 3 wolf moon coloring book. Air plant waistcoat readymade sriracha, tousled palo santo prism"}, "commit"=>"Create Item"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/items_controller.rb:19:in `create'
+  [1m[36mItem Create (0.2ms)[0m  [1m[32mINSERT INTO "items" ("title", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "Fourth Item"], ["description", "Lorem ipsum dolor amet swag authentic kitsch chicharrones freegan small batch trust fund copper mug chia thundercats bespoke listicle kickstarter iceland. Raclette cold-pressed lyft, scenester wayfarers waistcoat subway tile tote bag fanny pack keffiyeh YOLO cliche lo-fi narwhal occupy. Adaptogen retro vinyl brunch. Artisan single-origin coffee stumptown tote bag, crucifix authentic neutra etsy gochujang gastropub jianbing pour-over gluten-free 3 wolf moon coloring book. Air plant waistcoat readymade sriracha, tousled palo santo prism"], ["created_at", "2019-06-28 13:14:30.095427"], ["updated_at", "2019-06-28 13:14:30.095427"]]
+  ↳ app/controllers/items_controller.rb:19:in `create'
+  [1m[35m (3.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/items_controller.rb:19:in `create'
+Redirected to http://localhost:3000/
+Completed 302 Found in 9ms (ActiveRecord: 4.0ms | Allocations: 4219)
+
+
+Started GET "/" for 127.0.0.1 at 2019-06-28 16:14:30 +0300
+Processing by ItemsController#index as HTML
+  Rendering items/index.html.erb within layouts/application
+  [1m[36mItem Load (0.2ms)[0m  [1m[34mSELECT "items".* FROM "items" ORDER BY created_at DESC[0m
+  ↳ app/views/items/index.html.erb:3
+  Rendered items/index.html.erb within layouts/application (Duration: 1.1ms | Allocations: 922)
+Completed 200 OK in 9ms (Views: 8.8ms | ActiveRecord: 0.2ms | Allocations: 14099)
+
+
+Started GET "/docs" for 127.0.0.1 at 2019-06-28 16:19:27 +0300
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActionController::RoutingError (No route matches [GET] "/docs"):
+  
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:57:in `block in call'
+activesupport (6.0.0.rc1) lib/active_support/notifications.rb:182:in `instrument'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:56:in `call'
+web-console (4.0.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:57:in `block in call'
+activesupport (6.0.0.rc1) lib/active_support/notifications.rb:182:in `instrument'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:56:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:57:in `block in call'
+activesupport (6.0.0.rc1) lib/active_support/notifications.rb:182:in `instrument'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:56:in `call'
+railties (6.0.0.rc1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.0.rc1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.0.rc1) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.0.rc1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.0.rc1) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.0.rc1) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:57:in `block in call'
+activesupport (6.0.0.rc1) lib/active_support/notifications.rb:182:in `instrument'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:56:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:57:in `block in call'
+activesupport (6.0.0.rc1) lib/active_support/notifications.rb:182:in `instrument'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:56:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:57:in `block in call'
+activesupport (6.0.0.rc1) lib/active_support/notifications.rb:182:in `instrument'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:56:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:57:in `block in call'
+activesupport (6.0.0.rc1) lib/active_support/notifications.rb:182:in `instrument'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:56:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:57:in `block in call'
+activesupport (6.0.0.rc1) lib/active_support/notifications.rb:182:in `instrument'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:56:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:57:in `block in call'
+activesupport (6.0.0.rc1) lib/active_support/notifications.rb:182:in `instrument'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:56:in `call'
+activesupport (6.0.0.rc1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:57:in `block in call'
+activesupport (6.0.0.rc1) lib/active_support/notifications.rb:182:in `instrument'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:56:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:57:in `block in call'
+activesupport (6.0.0.rc1) lib/active_support/notifications.rb:182:in `instrument'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:56:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/static.rb:126:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:57:in `block in call'
+activesupport (6.0.0.rc1) lib/active_support/notifications.rb:182:in `instrument'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:56:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:57:in `block in call'
+activesupport (6.0.0.rc1) lib/active_support/notifications.rb:182:in `instrument'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:56:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:57:in `block in call'
+activesupport (6.0.0.rc1) lib/active_support/notifications.rb:182:in `instrument'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:56:in `call'
+webpacker (4.0.7) lib/webpacker/dev_server_proxy.rb:29:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:57:in `block in call'
+activesupport (6.0.0.rc1) lib/active_support/notifications.rb:182:in `instrument'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:56:in `call'
+railties (6.0.0.rc1) lib/rails/engine.rb:526:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+DEPRECATION WARNING: Using `bin/rake routes` is deprecated and will be removed in Rails 6.1. Use `bin/rails routes` instead.
+ (called from block in execute at /home/ceren/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/rake-12.3.2/lib/rake/task.rb:273)
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to DeviseCreateUsers (20190628132311)
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE TABLE "users" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "email" varchar DEFAULT '' NOT NULL, "encrypted_password" varchar DEFAULT '' NOT NULL, "reset_password_token" varchar, "reset_password_sent_at" datetime, "remember_created_at" datetime, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_users_on_email" ON "users" ("email")[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_users_on_reset_password_token" ON "users" ("reset_password_token")[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20190628132311"]]
+  [1m[35m (7.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/users/sign_up" for 127.0.0.1 at 2019-06-28 16:27:07 +0300
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.6ms | Allocations: 567)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 47.3ms | Allocations: 24131)
+Completed 200 OK in 627ms (Views: 612.7ms | ActiveRecord: 1.3ms | Allocations: 1598958)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2019-06-28 16:27:45 +0300
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.6ms | Allocations: 221)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 15.8ms | Allocations: 9549)
+Started GET "/users/sign_in" for 127.0.0.1 at 2019-06-28 16:27:45 +0300
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.2ms | Allocations: 134)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 10.1ms | Allocations: 8816)
+Completed 200 OK in 53ms (Views: 50.6ms | ActiveRecord: 0.0ms | Allocations: 47811)
+
+
+Completed 200 OK in 32ms (Views: 29.4ms | ActiveRecord: 0.0ms | Allocations: 34570)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2019-06-28 16:27:46 +0300
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"Lo6NPKkpk+1bvTZHgtYrkgOlGFaHanBVruV340GOVN4Yv4dEeg2M8YXT/ODaNJA1mQR99R3/YRu31GpuKIFAdQ==", "user"=>{"email"=>"user@example.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["email", "user@example.com"], ["LIMIT", 1]]
+Completed 401 Unauthorized in 7ms (ActiveRecord: 0.3ms | Allocations: 3743)
+
+
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"authenticity_token"=>"Lo6NPKkpk+1bvTZHgtYrkgOlGFaHanBVruV340GOVN4Yv4dEeg2M8YXT/ODaNJA1mQR99R3/YRu31GpuKIFAdQ==", "user"=>{"email"=>"user@example.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.2ms | Allocations: 134)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 9.5ms | Allocations: 8813)
+Completed 200 OK in 136ms (Views: 19.3ms | ActiveRecord: 0.0ms | Allocations: 23079)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2019-06-28 16:28:10 +0300
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"t2I2VZ+CJAxns69MLDt+8w2b+negDwanZoYXC1i991PQB6xNKE96AvFHvToFI2nmiuGzNhAAKlxzaE3ubu34nQ==", "user"=>{"email"=>"user@example.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["email", "user@example.com"], ["LIMIT", 1]]
+Completed 401 Unauthorized in 6ms (ActiveRecord: 0.2ms | Allocations: 2713)
+
+
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"authenticity_token"=>"t2I2VZ+CJAxns69MLDt+8w2b+negDwanZoYXC1i991PQB6xNKE96AvFHvToFI2nmiuGzNhAAKlxzaE3ubu34nQ==", "user"=>{"email"=>"user@example.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.2ms | Allocations: 134)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 9.4ms | Allocations: 8811)
+Completed 200 OK in 140ms (Views: 17.7ms | ActiveRecord: 0.0ms | Allocations: 21866)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2019-06-28 16:28:22 +0300
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.2ms | Allocations: 80)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 17.4ms | Allocations: 6691)
+Completed 200 OK in 32ms (Views: 29.8ms | ActiveRecord: 0.0ms | Allocations: 19861)
+
+
+Started POST "/users" for 127.0.0.1 at 2019-06-28 16:28:36 +0300
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"authenticity_token"=>"pgnrCvXH4gO8WIuiaKVfsmL00kWJ7MfBCcXC5tRvB3JEA/lfQOnZH222u/9saYrmZO0/Z8mCj1bwi7GzCibv/Q==", "user"=>{"email"=>"user@example.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "user@example.com"], ["LIMIT", 1]]
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["email", "user@example.com"], ["encrypted_password", "$2a$11$l61ghih.HZ/V6bwRjCHKT.bBe/vu2rwoAjVkAYKRSoLBh3gwSVMM6"], ["created_at", "2019-06-28 13:28:36.484655"], ["updated_at", "2019-06-28 13:28:36.484655"]]
+  [1m[35m (6.3ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 144ms (ActiveRecord: 6.7ms | Allocations: 18435)
+
+
+Started GET "/" for 127.0.0.1 at 2019-06-28 16:28:36 +0300
+Processing by ItemsController#index as HTML
+  Rendering items/index.html.erb within layouts/application
+  [1m[36mItem Load (0.2ms)[0m  [1m[34mSELECT "items".* FROM "items" ORDER BY created_at DESC[0m
+  ↳ app/views/items/index.html.erb:3
+  Rendered items/index.html.erb within layouts/application (Duration: 4.9ms | Allocations: 4901)
+Completed 200 OK in 15ms (Views: 12.6ms | ActiveRecord: 0.5ms | Allocations: 19127)
+
+
+Started GET "/" for 127.0.0.1 at 2019-06-28 16:59:51 +0300
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by ItemsController#index as HTML
+  Rendering items/index.html.erb within layouts/application
+  [1m[36mItem Load (0.3ms)[0m  [1m[34mSELECT "items".* FROM "items" ORDER BY created_at DESC[0m
+  ↳ app/views/items/index.html.erb:3
+  Rendered items/index.html.erb within layouts/application (Duration: 2.7ms | Allocations: 959)
+Completed 200 OK in 16ms (Views: 14.8ms | ActiveRecord: 0.3ms | Allocations: 14199)
+
+
+Started GET "/" for 127.0.0.1 at 2019-06-28 17:14:39 +0300
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by ItemsController#index as HTML
+  Rendering items/index.html.erb within layouts/application
+  [1m[36mItem Load (0.1ms)[0m  [1m[34mSELECT "items".* FROM "items" ORDER BY created_at DESC[0m
+  ↳ app/views/items/index.html.erb:3
+  Rendered items/index.html.erb within layouts/application (Duration: 1.5ms | Allocations: 1146)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:19
+Completed 200 OK in 15ms (Views: 13.7ms | ActiveRecord: 0.3ms | Allocations: 16839)
+
+
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2019-06-28 17:15:05 +0300
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"xufG3XDEqqe5j59abRuQvqwXRYHDa/9Uk7AvX1g86AChglzFxwn0qS97jSxEA4erK20MwHNk06+GXnW6bmznzg=="}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Redirected to http://localhost:3000/
+Completed 302 Found in 15ms (ActiveRecord: 0.2ms | Allocations: 8484)
+
+
+Started GET "/" for 127.0.0.1 at 2019-06-28 17:15:05 +0300
+Processing by ItemsController#index as HTML
+  Rendering items/index.html.erb within layouts/application
+  [1m[36mItem Load (0.2ms)[0m  [1m[34mSELECT "items".* FROM "items" ORDER BY created_at DESC[0m
+  ↳ app/views/items/index.html.erb:3
+  Rendered items/index.html.erb within layouts/application (Duration: 1.8ms | Allocations: 940)
+Completed 200 OK in 16ms (Views: 15.1ms | ActiveRecord: 0.2ms | Allocations: 14380)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2019-06-28 17:15:22 +0300
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.8ms | Allocations: 552)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 24.4ms | Allocations: 9606)
+Completed 200 OK in 41ms (Views: 38.5ms | ActiveRecord: 0.0ms | Allocations: 24084)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2019-06-28 17:15:23 +0300
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"+b6vMydEPN1cxEZTgQ2fqgCK/eEI93udAk0yERzPc7Xv9HLygQNsk8l3dGC4fI/CcbijP66Lf6LinKjwLL5/iA==", "user"=>{"email"=>"user@example.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["email", "user@example.com"], ["LIMIT", 1]]
+Redirected to http://localhost:3000/
+Completed 302 Found in 128ms (ActiveRecord: 0.3ms | Allocations: 5102)
+
+
+Started GET "/" for 127.0.0.1 at 2019-06-28 17:15:23 +0300
+Processing by ItemsController#index as HTML
+  Rendering items/index.html.erb within layouts/application
+  [1m[36mItem Load (0.1ms)[0m  [1m[34mSELECT "items".* FROM "items" ORDER BY created_at DESC[0m
+  ↳ app/views/items/index.html.erb:3
+  Rendered items/index.html.erb within layouts/application (Duration: 1.2ms | Allocations: 934)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:19
+Completed 200 OK in 12ms (Views: 11.1ms | ActiveRecord: 0.3ms | Allocations: 15268)
+
+
+Started GET "/" for 127.0.0.1 at 2019-06-28 17:16:06 +0300
+Processing by ItemsController#index as HTML
+  Rendering items/index.html.erb within layouts/application
+  [1m[36mItem Load (0.4ms)[0m  [1m[34mSELECT "items".* FROM "items" ORDER BY created_at DESC[0m
+  ↳ app/views/items/index.html.erb:3
+  Rendered items/index.html.erb within layouts/application (Duration: 5.0ms | Allocations: 1076)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:19
+Completed 200 OK in 35ms (Views: 32.0ms | ActiveRecord: 0.6ms | Allocations: 16670)
+
+
+Started GET "/items/new" for 127.0.0.1 at 2019-06-28 17:16:14 +0300
+Processing by ItemsController#new as HTML
+  Rendering items/new.html.erb within layouts/application
+  Rendered items/_form.html.erb (Duration: 13.4ms | Allocations: 11139)
+  Rendered items/new.html.erb within layouts/application (Duration: 14.1ms | Allocations: 11466)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:19
+Completed 200 OK in 23ms (Views: 22.6ms | ActiveRecord: 0.1ms | Allocations: 25707)
+
+
+Started GET "/" for 127.0.0.1 at 2019-06-28 17:16:17 +0300
+Processing by ItemsController#index as HTML
+  Rendering items/index.html.erb within layouts/application
+  [1m[36mItem Load (0.2ms)[0m  [1m[34mSELECT "items".* FROM "items" ORDER BY created_at DESC[0m
+  ↳ app/views/items/index.html.erb:3
+  Rendered items/index.html.erb within layouts/application (Duration: 1.2ms | Allocations: 912)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:19
+Completed 200 OK in 14ms (Views: 12.3ms | ActiveRecord: 0.4ms | Allocations: 15238)
+
+
+Started GET "/items/new" for 127.0.0.1 at 2019-06-28 17:16:19 +0300
+Processing by ItemsController#new as HTML
+  Rendering items/new.html.erb within layouts/application
+  Rendered items/_form.html.erb (Duration: 22.3ms | Allocations: 5978)
+  Rendered items/new.html.erb within layouts/application (Duration: 22.7ms | Allocations: 6053)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:19
+Completed 200 OK in 45ms (Views: 43.2ms | ActiveRecord: 0.1ms | Allocations: 20153)
+
+
+Started GET "/" for 127.0.0.1 at 2019-06-28 17:16:19 +0300
+Processing by ItemsController#index as HTML
+  Rendering items/index.html.erb within layouts/application
+  [1m[36mItem Load (0.2ms)[0m  [1m[34mSELECT "items".* FROM "items" ORDER BY created_at DESC[0m
+  ↳ app/views/items/index.html.erb:3
+  Rendered items/index.html.erb within layouts/application (Duration: 1.4ms | Allocations: 907)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:19
+Completed 200 OK in 12ms (Views: 11.4ms | ActiveRecord: 0.3ms | Allocations: 15223)
+
+
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to AddUserIdToItems (20190628142049)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  [1m[35mALTER TABLE "items" ADD "user_id" integer[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20190628142049"]]
+  [1m[35m (6.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mItem Load (0.2ms)[0m  [1m[34mSELECT "items".* FROM "items" LIMIT ?[0m  [["LIMIT", 11]]
+Started GET "/items/new" for 127.0.0.1 at 2019-06-28 17:25:52 +0300
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ItemsController#new as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/items_controller.rb:14:in `new'
+  Rendering items/new.html.erb within layouts/application
+  Rendered items/_form.html.erb (Duration: 7.4ms | Allocations: 5882)
+  Rendered items/new.html.erb within layouts/application (Duration: 7.6ms | Allocations: 5957)
+Completed 200 OK in 35ms (Views: 16.7ms | ActiveRecord: 1.0ms | Allocations: 36885)
+
+
+Started POST "/items" for 127.0.0.1 at 2019-06-28 17:26:13 +0300
+Processing by ItemsController#create as HTML
+  Parameters: {"authenticity_token"=>"dW5411AtIqGIsh66jdeFU1uttfpZBtHVdSxE5PTeaffDsiSixr/0Qwb1ZZG2thVssgJubAbVxZz4yok8kqJekw==", "item"=>{"title"=>"Current User Item", "description"=>"Lorem ipsum dolor amet swag authentic kitsch chicharrones freegan small batch trust fund copper mug chia thundercats bespoke listicle kickstarter iceland. Raclette cold-pressed lyft, scenester wayfarers waistcoat subway tile tote bag fanny pack keffiyeh YOLO cliche lo-fi narwhal occupy. Adaptogen retro vinyl brunch. Artisan single-origin coffee stumptown tote bag, crucifix authentic neutra etsy gochujang gastropub jianbing pour-over gluten-free 3 wolf moon coloring book. Air plant waistcoat readymade sriracha, tousled palo santo prism"}, "commit"=>"Create Item"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/items_controller.rb:18:in `create'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/items_controller.rb:19:in `create'
+  [1m[36mItem Create (0.3ms)[0m  [1m[32mINSERT INTO "items" ("title", "description", "created_at", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?)[0m  [["title", "Current User Item"], ["description", "Lorem ipsum dolor amet swag authentic kitsch chicharrones freegan small batch trust fund copper mug chia thundercats bespoke listicle kickstarter iceland. Raclette cold-pressed lyft, scenester wayfarers waistcoat subway tile tote bag fanny pack keffiyeh YOLO cliche lo-fi narwhal occupy. Adaptogen retro vinyl brunch. Artisan single-origin coffee stumptown tote bag, crucifix authentic neutra etsy gochujang gastropub jianbing pour-over gluten-free 3 wolf moon coloring book. Air plant waistcoat readymade sriracha, tousled palo santo prism"], ["created_at", "2019-06-28 14:26:13.813635"], ["updated_at", "2019-06-28 14:26:13.813635"], ["user_id", 1]]
+  ↳ app/controllers/items_controller.rb:19:in `create'
+  [1m[35m (4.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/items_controller.rb:19:in `create'
+Redirected to http://localhost:3000/
+Completed 302 Found in 15ms (ActiveRecord: 4.8ms | Allocations: 5457)
+
+
+Started GET "/" for 127.0.0.1 at 2019-06-28 17:26:13 +0300
+Processing by ItemsController#index as HTML
+  Rendering items/index.html.erb within layouts/application
+  [1m[36mItem Load (0.2ms)[0m  [1m[34mSELECT "items".* FROM "items" ORDER BY created_at DESC[0m
+  ↳ app/views/items/index.html.erb:3
+  Rendered items/index.html.erb within layouts/application (Duration: 2.7ms | Allocations: 977)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:19
+Completed 200 OK in 19ms (Views: 17.5ms | ActiveRecord: 0.4ms | Allocations: 15293)
+
+
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mItem Load (0.3ms)[0m  [1m[34mSELECT "items".* FROM "items" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mItem Load (0.4ms)[0m  [1m[34mSELECT "items".* FROM "items" ORDER BY "items"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mItem Load (0.5ms)[0m  [1m[34mSELECT "items".* FROM "items" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mItem Load (0.3ms)[0m  [1m[34mSELECT "items".* FROM "items" WHERE "items"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mItem Update (0.3ms)[0m  [1m[33mUPDATE "items" SET "updated_at" = ?, "user_id" = ? WHERE "items"."id" = ?[0m  [["updated_at", "2019-06-28 14:29:04.127229"], ["user_id", 1], ["id", 4]]
+  [1m[35m (6.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mItem Load (0.3ms)[0m  [1m[34mSELECT "items".* FROM "items" WHERE "items"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+Started GET "/items/1" for 127.0.0.1 at 2019-06-28 17:31:58 +0300
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by ItemsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mItem Load (0.1ms)[0m  [1m[34mSELECT "items".* FROM "items" WHERE "items"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/items_controller.rb:50:in `find_item'
+  Rendering items/show.html.erb within layouts/application
+  Rendered items/show.html.erb within layouts/application (Duration: 0.7ms | Allocations: 323)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:19
+Completed 200 OK in 13ms (Views: 11.4ms | ActiveRecord: 0.3ms | Allocations: 15592)
+
+
+Started DELETE "/items/1" for 127.0.0.1 at 2019-06-28 17:32:00 +0300
+Processing by ItemsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"Bsugc1XXAzXaVSdxcmjQQDcTq1ErbKR+8xWbdKUiHTW1Sfh3z7ckQZ0cfcAwT+p7EOO6jgQQnBEwz4BZj9b/3Q==", "id"=>"1"}
+  [1m[36mItem Load (0.3ms)[0m  [1m[34mSELECT "items".* FROM "items" WHERE "items"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/items_controller.rb:50:in `find_item'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/items_controller.rb:38:in `destroy'
+  [1m[36mItem Destroy (0.5ms)[0m  [1m[31mDELETE FROM "items" WHERE "items"."id" = ?[0m  [["id", 1]]
+  ↳ app/controllers/items_controller.rb:38:in `destroy'
+  [1m[35m (9.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/items_controller.rb:38:in `destroy'
+Redirected to http://localhost:3000/
+Completed 302 Found in 39ms (ActiveRecord: 10.6ms | Allocations: 4247)
+
+
+Started GET "/" for 127.0.0.1 at 2019-06-28 17:32:00 +0300
+Processing by ItemsController#index as HTML
+  Rendering items/index.html.erb within layouts/application
+  [1m[36mItem Load (0.4ms)[0m  [1m[34mSELECT "items".* FROM "items" ORDER BY created_at DESC[0m
+  ↳ app/views/items/index.html.erb:3
+  Rendered items/index.html.erb within layouts/application (Duration: 3.5ms | Allocations: 916)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:19
+Completed 200 OK in 25ms (Views: 23.7ms | ActiveRecord: 0.5ms | Allocations: 15228)
+
+
+Started GET "/items/3" for 127.0.0.1 at 2019-06-28 17:32:02 +0300
+Processing by ItemsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mItem Load (0.3ms)[0m  [1m[34mSELECT "items".* FROM "items" WHERE "items"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/items_controller.rb:50:in `find_item'
+  Rendering items/show.html.erb within layouts/application
+  Rendered items/show.html.erb within layouts/application (Duration: 0.4ms | Allocations: 125)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:19
+Completed 200 OK in 22ms (Views: 16.9ms | ActiveRecord: 0.4ms | Allocations: 15003)
+
+
+Started DELETE "/items/3" for 127.0.0.1 at 2019-06-28 17:32:04 +0300
+Processing by ItemsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"/p3v4ARwJ1sR8NtPIzDR4MD2TeixiZqhYcxBdk/U8L9NH7fknhAAL1a5gf5hF+vb5wZcN571os6iFlpbZSASVw==", "id"=>"3"}
+  [1m[36mItem Load (0.1ms)[0m  [1m[34mSELECT "items".* FROM "items" WHERE "items"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/items_controller.rb:50:in `find_item'
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/items_controller.rb:38:in `destroy'
+  [1m[36mItem Destroy (0.4ms)[0m  [1m[31mDELETE FROM "items" WHERE "items"."id" = ?[0m  [["id", 3]]
+  ↳ app/controllers/items_controller.rb:38:in `destroy'
+  [1m[35m (6.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/items_controller.rb:38:in `destroy'
+Redirected to http://localhost:3000/
+Completed 302 Found in 11ms (ActiveRecord: 7.1ms | Allocations: 4231)
+
+
+Started GET "/" for 127.0.0.1 at 2019-06-28 17:32:04 +0300
+Processing by ItemsController#index as HTML
+  Rendering items/index.html.erb within layouts/application
+  [1m[36mItem Load (0.2ms)[0m  [1m[34mSELECT "items".* FROM "items" ORDER BY created_at DESC[0m
+  ↳ app/views/items/index.html.erb:3
+  Rendered items/index.html.erb within layouts/application (Duration: 1.3ms | Allocations: 861)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:19
+Completed 200 OK in 12ms (Views: 11.4ms | ActiveRecord: 0.3ms | Allocations: 15166)
+
+
+Started GET "/items/4" for 127.0.0.1 at 2019-06-28 17:32:05 +0300
+Processing by ItemsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mItem Load (0.1ms)[0m  [1m[34mSELECT "items".* FROM "items" WHERE "items"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/items_controller.rb:50:in `find_item'
+  Rendering items/show.html.erb within layouts/application
+  Rendered items/show.html.erb within layouts/application (Duration: 0.5ms | Allocations: 125)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:19
+Completed 200 OK in 12ms (Views: 10.5ms | ActiveRecord: 0.3ms | Allocations: 15010)
+
+
+Started DELETE "/items/4" for 127.0.0.1 at 2019-06-28 17:32:07 +0300
+Processing by ItemsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"zxVAqBi+P+2JlI7maNdm9ZZwcXPVqJEywTK6elREOXF8lxisgt4Ymc7d1Fcq8FzOsYBgrPrUqV0C6KFXfrDbmQ==", "id"=>"4"}
+  [1m[36mItem Load (0.1ms)[0m  [1m[34mSELECT "items".* FROM "items" WHERE "items"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/items_controller.rb:50:in `find_item'
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/items_controller.rb:38:in `destroy'
+  [1m[36mItem Destroy (0.2ms)[0m  [1m[31mDELETE FROM "items" WHERE "items"."id" = ?[0m  [["id", 4]]
+  ↳ app/controllers/items_controller.rb:38:in `destroy'
+  [1m[35m (6.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/items_controller.rb:38:in `destroy'
+Redirected to http://localhost:3000/
+Completed 302 Found in 11ms (ActiveRecord: 6.8ms | Allocations: 4228)
+
+
+Started GET "/" for 127.0.0.1 at 2019-06-28 17:32:07 +0300
+Processing by ItemsController#index as HTML
+  Rendering items/index.html.erb within layouts/application
+  [1m[36mItem Load (0.2ms)[0m  [1m[34mSELECT "items".* FROM "items" ORDER BY created_at DESC[0m
+  ↳ app/views/items/index.html.erb:3
+  Rendered items/index.html.erb within layouts/application (Duration: 1.6ms | Allocations: 814)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:19
+Completed 200 OK in 12ms (Views: 11.1ms | ActiveRecord: 0.3ms | Allocations: 15131)
+
+
+Started GET "/items/5" for 127.0.0.1 at 2019-06-28 17:32:08 +0300
+Processing by ItemsController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mItem Load (0.1ms)[0m  [1m[34mSELECT "items".* FROM "items" WHERE "items"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/items_controller.rb:50:in `find_item'
+  Rendering items/show.html.erb within layouts/application
+  Rendered items/show.html.erb within layouts/application (Duration: 0.5ms | Allocations: 125)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:19
+Completed 200 OK in 13ms (Views: 11.5ms | ActiveRecord: 0.2ms | Allocations: 15008)
+
+
+Started DELETE "/items/5" for 127.0.0.1 at 2019-06-28 17:32:11 +0300
+Processing by ItemsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"KfJ0mYlDxD6mBpLdd7wEdRaOf4O1arRN6e9YQ7RIc5+acCydEyPjSuFPyGw1mz5OMX5uXJoWjCIqNUNunryRdw==", "id"=>"5"}
+  [1m[36mItem Load (0.1ms)[0m  [1m[34mSELECT "items".* FROM "items" WHERE "items"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/items_controller.rb:50:in `find_item'
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/items_controller.rb:38:in `destroy'
+  [1m[36mItem Destroy (0.2ms)[0m  [1m[31mDELETE FROM "items" WHERE "items"."id" = ?[0m  [["id", 5]]
+  ↳ app/controllers/items_controller.rb:38:in `destroy'
+  [1m[35m (7.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/items_controller.rb:38:in `destroy'
+Redirected to http://localhost:3000/
+Completed 302 Found in 12ms (ActiveRecord: 7.4ms | Allocations: 4226)
+
+
+Started GET "/" for 127.0.0.1 at 2019-06-28 17:32:11 +0300
+Processing by ItemsController#index as HTML
+  Rendering items/index.html.erb within layouts/application
+  [1m[36mItem Load (0.2ms)[0m  [1m[34mSELECT "items".* FROM "items" ORDER BY created_at DESC[0m
+  ↳ app/views/items/index.html.erb:3
+  Rendered items/index.html.erb within layouts/application (Duration: 1.5ms | Allocations: 767)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:19
+Completed 200 OK in 17ms (Views: 16.5ms | ActiveRecord: 0.3ms | Allocations: 15077)
+
+
+Started GET "/items/new" for 127.0.0.1 at 2019-06-28 17:32:13 +0300
+Processing by ItemsController#new as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/items_controller.rb:14:in `new'
+  Rendering items/new.html.erb within layouts/application
+  Rendered items/_form.html.erb (Duration: 8.9ms | Allocations: 5988)
+  Rendered items/new.html.erb within layouts/application (Duration: 9.2ms | Allocations: 6063)
+Completed 200 OK in 20ms (Views: 17.8ms | ActiveRecord: 0.1ms | Allocations: 20284)
+
+
+Started POST "/items" for 127.0.0.1 at 2019-06-28 17:33:03 +0300
+Processing by ItemsController#create as HTML
+  Parameters: {"authenticity_token"=>"aq6MHvgamrbx3Bv57HPqHK4Ny18cSr9ncgGru5K7NhHcctBrbohMVH+bYNLXEnojR6IQyUOZqy7/52Zj9McBdQ==", "item"=>{"title"=>"Contact  Publishers For Book", "description"=>"Lorem ipsum dolor amet swag authentic kitsch chicharrones freegan small batch trust fund copper mug chia thundercats bespoke listicle kickstarter iceland. Raclette cold-pressed lyft, scenester wayfarers waistcoat subway tile tote bag fanny pack keffiyeh YOLO cliche lo-fi narwhal occupy. Adaptogen retro vinyl brunch. Artisan single-origin coffee stumptown tote bag, crucifix authentic neutra etsy gochujang gastropub jianbing pour-over gluten-free 3 wolf moon coloring book. Air plant waistcoat readymade sriracha, tousled palo santo prism.\r\n\r\nTumeric blog unicorn dreamcatcher single-origin coffee meh, fashion axe street art live-edge hella. Poutine vice air plant cray, portland celiac pok pok pop-up everyday carry glossier photo booth. Shabby chic coloring book photo booth swag mumblecore affogato schlitz drinking vinegar wayfarers health goth chambray hammock activated charcoal. Chicharrones everyday carry butcher gentrify. Austin air plant put a bird on it, fashion axe godard man bun tilde hot chicken synth tumeric. Try-hard distillery stumptown, lomo sustainable lyft letterpress. Intelligentsia retro tbh green juice, kitsch literally humblebrag copper mug bespoke tacos tote bag +1 single-origin coffee tilde hella."}, "commit"=>"Create Item"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/items_controller.rb:18:in `create'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/items_controller.rb:19:in `create'
+  [1m[36mItem Create (0.3ms)[0m  [1m[32mINSERT INTO "items" ("title", "description", "created_at", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?)[0m  [["title", "Contact  Publishers For Book"], ["description", "Lorem ipsum dolor amet swag authentic kitsch chicharrones freegan small batch trust fund copper mug chia thundercats bespoke listicle kickstarter iceland. Raclette cold-pressed lyft, scenester wayfarers waistcoat subway tile tote bag fanny pack keffiyeh YOLO cliche lo-fi narwhal occupy. Adaptogen retro vinyl brunch. Artisan single-origin coffee stumptown tote bag, crucifix authentic neutra etsy gochujang gastropub jianbing pour-over gluten-free 3 wolf moon coloring book. Air plant waistcoat readymade sriracha, tousled palo santo prism.\r\n\r\nTumeric blog unicorn dreamcatcher single-origin coffee meh, fashion axe street art live-edge hella. Poutine vice air plant cray, portland celiac pok pok pop-up everyday carry glossier photo booth. Shabby chic coloring book photo booth swag mumblecore affogato schlitz drinking vinegar wayfarers health goth chambray hammock activated charcoal. Chicharrones everyday carry butcher gentrify. Austin air plant put a bird on it, fashion axe godard man bun tilde hot chicken synth tumeric. Try-hard distillery stumptown, lomo sustainable lyft letterpress. Intelligentsia retro tbh green juice, kitsch literally humblebrag copper mug bespoke tacos tote bag +1 single-origin coffee tilde hella."], ["created_at", "2019-06-28 14:33:03.874484"], ["updated_at", "2019-06-28 14:33:03.874484"], ["user_id", 1]]
+  ↳ app/controllers/items_controller.rb:19:in `create'
+  [1m[35m (3.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/items_controller.rb:19:in `create'
+Redirected to http://localhost:3000/
+Completed 302 Found in 15ms (ActiveRecord: 4.4ms | Allocations: 5402)
+
+
+Started GET "/" for 127.0.0.1 at 2019-06-28 17:33:03 +0300
+Processing by ItemsController#index as HTML
+  Rendering items/index.html.erb within layouts/application
+  [1m[36mItem Load (0.2ms)[0m  [1m[34mSELECT "items".* FROM "items" ORDER BY created_at DESC[0m
+  ↳ app/views/items/index.html.erb:3
+  Rendered items/index.html.erb within layouts/application (Duration: 1.5ms | Allocations: 815)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:19
+Completed 200 OK in 16ms (Views: 15.1ms | ActiveRecord: 0.3ms | Allocations: 15126)
+
+
+Started GET "/items/new" for 127.0.0.1 at 2019-06-28 17:33:07 +0300
+Processing by ItemsController#new as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/items_controller.rb:14:in `new'
+  Rendering items/new.html.erb within layouts/application
+  Rendered items/_form.html.erb (Duration: 6.6ms | Allocations: 5983)
+  Rendered items/new.html.erb within layouts/application (Duration: 6.8ms | Allocations: 6058)
+Completed 200 OK in 24ms (Views: 16.2ms | ActiveRecord: 0.1ms | Allocations: 20281)
+
+
+Started POST "/items" for 127.0.0.1 at 2019-06-28 17:33:59 +0300
+Processing by ItemsController#create as HTML
+  Parameters: {"authenticity_token"=>"hh6N3wv9V0pKM0I1HxWtGNQ4Lf9rbPyjjp2rbvjUT3EwwtGqnW+BqMR0OR4kdD0nPZf2aTS/6OoDe2a2nqh4FQ==", "item"=>{"title"=>"Create Guest List For Party", "description"=>"Tumeric blog unicorn dreamcatcher single-origin coffee meh, fashion axe street art live-edge hella. Poutine vice air plant cray, portland celiac pok pok pop-up everyday carry glossier photo booth. Shabby chic coloring book photo booth swag mumblecore affogato schlitz drinking vinegar wayfarers health goth chambray hammock activated charcoal."}, "commit"=>"Create Item"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/items_controller.rb:18:in `create'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/items_controller.rb:19:in `create'
+  [1m[36mItem Create (0.9ms)[0m  [1m[32mINSERT INTO "items" ("title", "description", "created_at", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?)[0m  [["title", "Create Guest List For Party"], ["description", "Tumeric blog unicorn dreamcatcher single-origin coffee meh, fashion axe street art live-edge hella. Poutine vice air plant cray, portland celiac pok pok pop-up everyday carry glossier photo booth. Shabby chic coloring book photo booth swag mumblecore affogato schlitz drinking vinegar wayfarers health goth chambray hammock activated charcoal."], ["created_at", "2019-06-28 14:33:59.213840"], ["updated_at", "2019-06-28 14:33:59.213840"], ["user_id", 1]]
+  ↳ app/controllers/items_controller.rb:19:in `create'
+  [1m[35m (4.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/items_controller.rb:19:in `create'
+Redirected to http://localhost:3000/
+Completed 302 Found in 24ms (ActiveRecord: 5.4ms | Allocations: 5387)
+
+
+Started GET "/" for 127.0.0.1 at 2019-06-28 17:33:59 +0300
+Processing by ItemsController#index as HTML
+  Rendering items/index.html.erb within layouts/application
+  [1m[36mItem Load (0.2ms)[0m  [1m[34mSELECT "items".* FROM "items" ORDER BY created_at DESC[0m
+  ↳ app/views/items/index.html.erb:3
+  Rendered items/index.html.erb within layouts/application (Duration: 1.4ms | Allocations: 863)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:19
+Completed 200 OK in 16ms (Views: 14.3ms | ActiveRecord: 0.7ms | Allocations: 15179)
+
+
+Started GET "/items/new" for 127.0.0.1 at 2019-06-28 17:34:14 +0300
+Processing by ItemsController#new as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/items_controller.rb:14:in `new'
+  Rendering items/new.html.erb within layouts/application
+  Rendered items/_form.html.erb (Duration: 6.7ms | Allocations: 5978)
+  Rendered items/new.html.erb within layouts/application (Duration: 6.9ms | Allocations: 6053)
+Completed 200 OK in 18ms (Views: 16.0ms | ActiveRecord: 0.1ms | Allocations: 20273)
+
+
+Started POST "/items" for 127.0.0.1 at 2019-06-28 17:35:14 +0300
+Processing by ItemsController#create as HTML
+  Parameters: {"authenticity_token"=>"x9FxOvAmM/2FuWYTWGmu6/IdnlPAjEnf5WOeFBx62NBxDS1PZrTlHwv+HThjCD7UG7JFxZ9fXZZohVPMegbvtA==", "item"=>{"title"=>"Find New Apartment (Top 5 Options)", "description"=>"Chicharrones everyday carry butcher gentrify. Austin air plant put a bird on it, fashion axe godard man bun tilde hot chicken synth tumeric. Try-hard distillery stumptown, lomo sustainable lyft letterpress. Intelligentsia retro tbh green juice, kitsch literally humblebrag copper mug bespoke tacos tote bag +1 single-origin coffee tilde hella."}, "commit"=>"Create Item"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/items_controller.rb:18:in `create'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/items_controller.rb:19:in `create'
+  [1m[36mItem Create (0.3ms)[0m  [1m[32mINSERT INTO "items" ("title", "description", "created_at", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?)[0m  [["title", "Find New Apartment (Top 5 Options)"], ["description", "Chicharrones everyday carry butcher gentrify. Austin air plant put a bird on it, fashion axe godard man bun tilde hot chicken synth tumeric. Try-hard distillery stumptown, lomo sustainable lyft letterpress. Intelligentsia retro tbh green juice, kitsch literally humblebrag copper mug bespoke tacos tote bag +1 single-origin coffee tilde hella."], ["created_at", "2019-06-28 14:35:14.235203"], ["updated_at", "2019-06-28 14:35:14.235203"], ["user_id", 1]]
+  ↳ app/controllers/items_controller.rb:19:in `create'
+  [1m[35m (4.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/items_controller.rb:19:in `create'
+Redirected to http://localhost:3000/
+Completed 302 Found in 15ms (ActiveRecord: 4.7ms | Allocations: 5389)
+
+
+Started GET "/" for 127.0.0.1 at 2019-06-28 17:35:14 +0300
+Processing by ItemsController#index as HTML
+  Rendering items/index.html.erb within layouts/application
+  [1m[36mItem Load (0.2ms)[0m  [1m[34mSELECT "items".* FROM "items" ORDER BY created_at DESC[0m
+  ↳ app/views/items/index.html.erb:3
+  Rendered items/index.html.erb within layouts/application (Duration: 1.2ms | Allocations: 912)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:19
+Completed 200 OK in 14ms (Views: 13.5ms | ActiveRecord: 0.3ms | Allocations: 15222)
+
+
+Started GET "/items/new" for 127.0.0.1 at 2019-06-28 17:35:29 +0300
+Processing by ItemsController#new as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/items_controller.rb:14:in `new'
+  Rendering items/new.html.erb within layouts/application
+  Rendered items/_form.html.erb (Duration: 15.3ms | Allocations: 5978)
+  Rendered items/new.html.erb within layouts/application (Duration: 15.7ms | Allocations: 6053)
+Completed 200 OK in 36ms (Views: 28.1ms | ActiveRecord: 0.4ms | Allocations: 20274)
+
+
+Started POST "/items" for 127.0.0.1 at 2019-06-28 17:36:34 +0300
+Processing by ItemsController#create as HTML
+  Parameters: {"authenticity_token"=>"tSmibBYODBs87JQfeUzGLsmdBTvdRZ/Z93eL4aS4piwD9f4ZgJza+bKr7zRCLVYRIDLerYKWi5B6kUY5wsSRSA==", "item"=>{"title"=>"Prepare For Marathon", "description"=>"Typewriter schlitz brunch, iPhone viral squid mumblecore pour-over DIY lyft XOXO butcher. Hexagon flexitarian tumblr, plaid semiotics humblebrag cred celiac twee asymmetrical mumblecore organic chillwave microdosing. Crucifix activated charcoal plaid tattooed stumptown affogato palo santo gochujang bespoke flexitarian. Cornhole celiac authentic, taxidermy keytar franzen green juice gentrify synth four loko. Selfies helvetica everyday carry viral, meh tousled bushwick."}, "commit"=>"Create Item"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/items_controller.rb:18:in `create'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/items_controller.rb:19:in `create'
+  [1m[36mItem Create (0.3ms)[0m  [1m[32mINSERT INTO "items" ("title", "description", "created_at", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?)[0m  [["title", "Prepare For Marathon"], ["description", "Typewriter schlitz brunch, iPhone viral squid mumblecore pour-over DIY lyft XOXO butcher. Hexagon flexitarian tumblr, plaid semiotics humblebrag cred celiac twee asymmetrical mumblecore organic chillwave microdosing. Crucifix activated charcoal plaid tattooed stumptown affogato palo santo gochujang bespoke flexitarian. Cornhole celiac authentic, taxidermy keytar franzen green juice gentrify synth four loko. Selfies helvetica everyday carry viral, meh tousled bushwick."], ["created_at", "2019-06-28 14:36:34.176994"], ["updated_at", "2019-06-28 14:36:34.176994"], ["user_id", 1]]
+  ↳ app/controllers/items_controller.rb:19:in `create'
+  [1m[35m (3.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/items_controller.rb:19:in `create'
+Redirected to http://localhost:3000/
+Completed 302 Found in 15ms (ActiveRecord: 4.6ms | Allocations: 5388)
+
+
+Started GET "/" for 127.0.0.1 at 2019-06-28 17:36:34 +0300
+Processing by ItemsController#index as HTML
+  Rendering items/index.html.erb within layouts/application
+  [1m[36mItem Load (0.2ms)[0m  [1m[34mSELECT "items".* FROM "items" ORDER BY created_at DESC[0m
+  ↳ app/views/items/index.html.erb:3
+  Rendered items/index.html.erb within layouts/application (Duration: 1.3ms | Allocations: 959)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:19
+Completed 200 OK in 14ms (Views: 13.3ms | ActiveRecord: 0.3ms | Allocations: 15272)
+
+
+Started GET "/items/new" for 127.0.0.1 at 2019-06-28 17:36:51 +0300
+Processing by ItemsController#new as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/items_controller.rb:14:in `new'
+  Rendering items/new.html.erb within layouts/application
+  Rendered items/_form.html.erb (Duration: 7.7ms | Allocations: 5979)
+  Rendered items/new.html.erb within layouts/application (Duration: 7.9ms | Allocations: 6054)
+Completed 200 OK in 19ms (Views: 17.2ms | ActiveRecord: 0.1ms | Allocations: 20279)
+
+
+Started POST "/items" for 127.0.0.1 at 2019-06-28 17:37:27 +0300
+Processing by ItemsController#create as HTML
+  Parameters: {"authenticity_token"=>"8iSWlTnTOpJas6QkN/J02Umr+mTO+Wg9uqXZyn8xgslE+Mrgr0HscNT03w8Mk+TmoAQh8pEqfHQ3QxQSGU21rQ==", "item"=>{"title"=>"Work On Travel Plans", "description"=>"Sartorial gentrify organic subway tile neutra polaroid farm-to-table 3 wolf moon. Wolf occupy keffiyeh VHS poutine kogi tote bag chillwave iPhone woke palo santo before they sold out lo-fi. Marfa bushwick iPhone air plant heirloom church-key slow-carb."}, "commit"=>"Create Item"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/items_controller.rb:18:in `create'
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/items_controller.rb:19:in `create'
+  [1m[36mItem Create (1.0ms)[0m  [1m[32mINSERT INTO "items" ("title", "description", "created_at", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?)[0m  [["title", "Work On Travel Plans"], ["description", "Sartorial gentrify organic subway tile neutra polaroid farm-to-table 3 wolf moon. Wolf occupy keffiyeh VHS poutine kogi tote bag chillwave iPhone woke palo santo before they sold out lo-fi. Marfa bushwick iPhone air plant heirloom church-key slow-carb."], ["created_at", "2019-06-28 14:37:27.808814"], ["updated_at", "2019-06-28 14:37:27.808814"], ["user_id", 1]]
+  ↳ app/controllers/items_controller.rb:19:in `create'
+  [1m[35m (4.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/items_controller.rb:19:in `create'
+Redirected to http://localhost:3000/
+Completed 302 Found in 26ms (ActiveRecord: 6.0ms | Allocations: 5388)
+
+
+Started GET "/" for 127.0.0.1 at 2019-06-28 17:37:27 +0300
+Processing by ItemsController#index as HTML
+  Rendering items/index.html.erb within layouts/application
+  [1m[36mItem Load (0.3ms)[0m  [1m[34mSELECT "items".* FROM "items" ORDER BY created_at DESC[0m
+  ↳ app/views/items/index.html.erb:3
+  Rendered items/index.html.erb within layouts/application (Duration: 2.2ms | Allocations: 1006)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:19
+Completed 200 OK in 18ms (Views: 16.7ms | ActiveRecord: 0.4ms | Allocations: 15316)
+
+
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2019-06-28 17:38:28 +0300
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"KPW+1cRixhMJsN3TA/R5TJEUVPAOuMgmTNLnwiS8o2mbd+bRXgLhZ075h2JB00N3tuRFLyHE8EmPCPzvDkhBgQ=="}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Redirected to http://localhost:3000/
+Completed 302 Found in 4ms (ActiveRecord: 0.1ms | Allocations: 3408)
+
+
+Started GET "/" for 127.0.0.1 at 2019-06-28 17:38:28 +0300
+Processing by ItemsController#index as HTML
+  Rendering items/index.html.erb within layouts/application
+  [1m[36mItem Load (0.1ms)[0m  [1m[34mSELECT "items".* FROM "items" ORDER BY created_at DESC[0m
+  ↳ app/views/items/index.html.erb:3
+  Rendered items/index.html.erb within layouts/application (Duration: 1.4ms | Allocations: 1005)
+Completed 200 OK in 11ms (Views: 10.0ms | ActiveRecord: 0.1ms | Allocations: 14447)
+
+
+Started GET "/" for 127.0.0.1 at 2019-06-28 17:38:40 +0300
+Processing by ItemsController#index as HTML
+  Rendering items/index.html.erb within layouts/application
+  [1m[36mItem Load (0.5ms)[0m  [1m[34mSELECT "items".* FROM "items" ORDER BY created_at DESC[0m
+  ↳ app/views/items/index.html.erb:3
+  Rendered items/index.html.erb within layouts/application (Duration: 4.2ms | Allocations: 1006)
+Completed 200 OK in 31ms (Views: 28.9ms | ActiveRecord: 0.5ms | Allocations: 14435)
+
+
+Started GET "/" for 127.0.0.1 at 2019-07-01 10:19:38 +0300
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by ItemsController#index as HTML
+  Rendering items/index.html.erb within layouts/application
+  Rendered items/_welcome_page.html.erb (Duration: 0.3ms | Allocations: 180)
+  Rendered items/index.html.erb within layouts/application (Duration: 1.6ms | Allocations: 656)
+Completed 200 OK in 17ms (Views: 16.0ms | ActiveRecord: 0.0ms | Allocations: 15347)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2019-07-01 10:20:07 +0300
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.7ms | Allocations: 567)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 18.9ms | Allocations: 9532)
+Completed 200 OK in 35ms (Views: 28.4ms | ActiveRecord: 0.5ms | Allocations: 29796)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2019-07-01 10:20:09 +0300
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"mRlrjeDrWtRcU7eNngSC22NQfJLXQZbwq3kFA20zfO36lmiExJcRHUuCUyQF8LNaD7doj4pqMmCl2hTeoZF/GA==", "user"=>{"email"=>"user@example.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["email", "user@example.com"], ["LIMIT", 1]]
+Redirected to http://localhost:3000/
+Completed 302 Found in 121ms (ActiveRecord: 0.3ms | Allocations: 5269)
+
+
+Started GET "/" for 127.0.0.1 at 2019-07-01 10:20:09 +0300
+Processing by ItemsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/items_controller.rb:6:in `index'
+  Rendering items/index.html.erb within layouts/application
+  [1m[36mItem Load (0.2ms)[0m  [1m[34mSELECT "items".* FROM "items" WHERE "items"."user_id" = ? ORDER BY created_at DESC[0m  [["user_id", 1]]
+  ↳ app/views/items/index.html.erb:3
+  Rendered items/index.html.erb within layouts/application (Duration: 4.6ms | Allocations: 4860)
+Completed 200 OK in 20ms (Views: 12.1ms | ActiveRecord: 0.7ms | Allocations: 24521)
+
+
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2019-07-01 10:20:21 +0300
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"/FOMOfydzv+D448/Q82C9RwKxmFB6vQ4cDYnl0MUzFdrCYgE/FbsyjfevbTvVRBZ0kpu7WnpF4jiTyLbBSDJvg=="}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Redirected to http://localhost:3000/
+Completed 302 Found in 12ms (ActiveRecord: 0.3ms | Allocations: 3262)
+
+
+Started GET "/" for 127.0.0.1 at 2019-07-01 10:20:21 +0300
+Processing by ItemsController#index as HTML
+  Rendering items/index.html.erb within layouts/application
+  Rendered items/_welcome_page.html.erb (Duration: 0.4ms | Allocations: 58)
+  Rendered items/index.html.erb within layouts/application (Duration: 0.9ms | Allocations: 170)
+Completed 200 OK in 22ms (Views: 20.1ms | ActiveRecord: 0.0ms | Allocations: 13606)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2019-07-01 10:20:23 +0300
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.2ms | Allocations: 134)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 14.2ms | Allocations: 8801)
+Completed 200 OK in 23ms (Views: 22.3ms | ActiveRecord: 0.0ms | Allocations: 22209)
+
+
+  [1m[35m (1.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to AddCompletedAtToItems (20190701072633)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  [1m[35mALTER TABLE "items" ADD "completed_at" datetime[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20190701072633"]]
+  [1m[35m (10.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+DEPRECATION WARNING: Using `bin/rake routes` is deprecated and will be removed in Rails 6.1. Use `bin/rails routes` instead.
+ (called from block in execute at /home/ceren/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/rake-12.3.2/lib/rake/task.rb:273)
+Started POST "/users/sign_in" for 127.0.0.1 at 2019-07-01 10:40:32 +0300
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"RTboLqjqSqwmhojM7LrKGEpP7wGV9aqIk2DcdzP/eNO4ncEdU8lc3YH0hJtOg0oFWWNRpObZDlLWXimfUh8sGA==", "user"=>{"email"=>"user@example.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["email", "user@example.com"], ["LIMIT", 1]]
+Redirected to http://localhost:3000/
+Completed 302 Found in 124ms (ActiveRecord: 0.7ms | Allocations: 11061)
+
+
+Started GET "/" for 127.0.0.1 at 2019-07-01 10:40:33 +0300
+Processing by ItemsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/items_controller.rb:6:in `index'
+  Rendering items/index.html.erb within layouts/application
+  [1m[36mItem Load (0.1ms)[0m  [1m[34mSELECT "items".* FROM "items" WHERE "items"."user_id" = ? ORDER BY created_at DESC[0m  [["user_id", 1]]
+  ↳ app/views/items/index.html.erb:3
+  Rendered items/index.html.erb within layouts/application (Duration: 6.4ms | Allocations: 5736)
+Completed 200 OK in 21ms (Views: 16.8ms | ActiveRecord: 0.9ms | Allocations: 22269)
+
+
+Started GET "/" for 127.0.0.1 at 2019-07-01 10:40:35 +0300
+Processing by ItemsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/items_controller.rb:6:in `index'
+  Rendering items/index.html.erb within layouts/application
+  [1m[36mItem Load (0.2ms)[0m  [1m[34mSELECT "items".* FROM "items" WHERE "items"."user_id" = ? ORDER BY created_at DESC[0m  [["user_id", 1]]
+  ↳ app/views/items/index.html.erb:3
+  Rendered items/index.html.erb within layouts/application (Duration: 1.4ms | Allocations: 1051)
+Completed 200 OK in 11ms (Views: 8.9ms | ActiveRecord: 0.3ms | Allocations: 15378)
+
+
+Started GET "/" for 127.0.0.1 at 2019-07-01 10:40:42 +0300
+Processing by ItemsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/items_controller.rb:6:in `index'
+  Rendering items/index.html.erb within layouts/application
+  [1m[36mItem Load (0.2ms)[0m  [1m[34mSELECT "items".* FROM "items" WHERE "items"."user_id" = ? ORDER BY created_at DESC[0m  [["user_id", 1]]
+  ↳ app/views/items/index.html.erb:3
+  Rendered items/index.html.erb within layouts/application (Duration: 1.7ms | Allocations: 1063)
+Completed 200 OK in 1651ms (Views: 1647.1ms | ActiveRecord: 0.4ms | Allocations: 2525765)
+
+
+Started GET "/" for 127.0.0.1 at 2019-07-01 10:50:17 +0300
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by ItemsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/items_controller.rb:6:in `index'
+  Rendering items/index.html.erb within layouts/application
+  [1m[36mItem Load (0.1ms)[0m  [1m[34mSELECT "items".* FROM "items" WHERE "items"."user_id" = ? ORDER BY created_at DESC[0m  [["user_id", 1]]
+  ↳ app/views/items/index.html.erb:4
+  Rendered items/index.html.erb within layouts/application (Duration: 3.0ms | Allocations: 2669)
+Completed 200 OK in 13ms (Views: 11.0ms | ActiveRecord: 0.3ms | Allocations: 18396)
+
+
+Started PATCH "/items/11/complete" for 127.0.0.1 at 2019-07-01 10:50:39 +0300
+Processing by ItemsController#complete as HTML
+  Parameters: {"authenticity_token"=>"xoC+ngUOE3WuGGwsPCVlIBIHV9os/JwMNg2OOvuDOCQpKF4q362idrCZITLOb0Qq+wFUy1N/SzfQvCmSrBkTig==", "id"=>"11"}
+  [1m[36mItem Load (0.2ms)[0m  [1m[34mSELECT "items".* FROM "items" WHERE "items"."id" = ? LIMIT ?[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/controllers/items_controller.rb:45:in `complete'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/items_controller.rb:46:in `complete'
+  [1m[36mItem Update (0.2ms)[0m  [1m[33mUPDATE "items" SET "completed_at" = ?, "updated_at" = ? WHERE "items"."id" = ?[0m  [["completed_at", "2019-07-01 07:50:39.607811"], ["updated_at", "2019-07-01 07:50:39.608135"], ["id", 11]]
+  ↳ app/controllers/items_controller.rb:46:in `complete'
+  [1m[35m (3.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/items_controller.rb:46:in `complete'
+Redirected to http://localhost:3000/
+Completed 302 Found in 12ms (ActiveRecord: 4.4ms | Allocations: 5018)
+
+
+Started GET "/" for 127.0.0.1 at 2019-07-01 10:50:39 +0300
+Processing by ItemsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/items_controller.rb:6:in `index'
+  Rendering items/index.html.erb within layouts/application
+  [1m[36mItem Load (0.1ms)[0m  [1m[34mSELECT "items".* FROM "items" WHERE "items"."user_id" = ? ORDER BY created_at DESC[0m  [["user_id", 1]]
+  ↳ app/views/items/index.html.erb:4
+  Rendered items/index.html.erb within layouts/application (Duration: 2.7ms | Allocations: 2066)
+Completed 200 OK in 13ms (Views: 10.6ms | ActiveRecord: 0.4ms | Allocations: 16422)
+
+
+Started DELETE "/items/10" for 127.0.0.1 at 2019-07-01 10:52:31 +0300
+Processing by ItemsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"XjD/d9JG++GyMcn6BVNg5rKi5VUqMbJncDK6eSB2o+uxmB/DCOVK4qywhOT3GUHsW6TmRFWyZVyWgx3Rd+yIRQ==", "id"=>"10"}
+  [1m[36mItem Load (0.1ms)[0m  [1m[34mSELECT "items".* FROM "items" WHERE "items"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/items_controller.rb:58:in `find_item'
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/items_controller.rb:40:in `destroy'
+  [1m[36mItem Destroy (0.2ms)[0m  [1m[31mDELETE FROM "items" WHERE "items"."id" = ?[0m  [["id", 10]]
+  ↳ app/controllers/items_controller.rb:40:in `destroy'
+  [1m[35m (6.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/items_controller.rb:40:in `destroy'
+Redirected to http://localhost:3000/
+Completed 302 Found in 11ms (ActiveRecord: 7.0ms | Allocations: 4233)
+
+
+Started GET "/" for 127.0.0.1 at 2019-07-01 10:52:31 +0300
+Processing by ItemsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/items_controller.rb:6:in `index'
+  Rendering items/index.html.erb within layouts/application
+  [1m[36mItem Load (0.1ms)[0m  [1m[34mSELECT "items".* FROM "items" WHERE "items"."user_id" = ? ORDER BY created_at DESC[0m  [["user_id", 1]]
+  ↳ app/views/items/index.html.erb:4
+  Rendered items/index.html.erb within layouts/application (Duration: 2.3ms | Allocations: 1852)
+Completed 200 OK in 13ms (Views: 10.7ms | ActiveRecord: 0.2ms | Allocations: 16181)
+
+
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2019-07-01 10:52:38 +0300
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"fDq3LtAPkCA1GADhEhNA9UV6nDN5aJ4vxpyTXhtRe6KTkleaCqwhIyuZTf/gWWH/rHyfIgbrSRQgLTT2TMtQDA=="}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Redirected to http://localhost:3000/
+Completed 302 Found in 8ms (ActiveRecord: 0.2ms | Allocations: 3254)
+
+
+Started GET "/" for 127.0.0.1 at 2019-07-01 10:52:38 +0300
+Processing by ItemsController#index as HTML
+  Rendering items/index.html.erb within layouts/application
+  Rendered items/_welcome_page.html.erb (Duration: 0.3ms | Allocations: 183)
+  Rendered items/index.html.erb within layouts/application (Duration: 0.7ms | Allocations: 438)
+Completed 200 OK in 10ms (Views: 8.8ms | ActiveRecord: 0.0ms | Allocations: 13888)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2019-07-01 10:53:56 +0300
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.7ms | Allocations: 577)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 20.3ms | Allocations: 9697)
+Completed 200 OK in 33ms (Views: 30.7ms | ActiveRecord: 0.0ms | Allocations: 24187)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2019-07-01 10:53:58 +0300
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"tP/HX0wTvjQLyrgyJlbeyPSnUv7VvTtvQhZgZfZwSkmKOVTGDoRqNvpkiBYIYNUiy7FcLM1FpG1K8Ibt+tQ1nw==", "user"=>{"email"=>"user@example.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["email", "user@example.com"], ["LIMIT", 1]]
+Redirected to http://localhost:3000/
+Completed 302 Found in 117ms (ActiveRecord: 0.2ms | Allocations: 5092)
+
+
+Started GET "/" for 127.0.0.1 at 2019-07-01 10:53:58 +0300
+Processing by ItemsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/items_controller.rb:6:in `index'
+  Rendering items/index.html.erb within layouts/application
+  [1m[36mItem Load (0.1ms)[0m  [1m[34mSELECT "items".* FROM "items" WHERE "items"."user_id" = ? ORDER BY created_at DESC[0m  [["user_id", 1]]
+  ↳ app/views/items/index.html.erb:4
+  Rendered items/index.html.erb within layouts/application (Duration: 2.2ms | Allocations: 1856)
+Completed 200 OK in 14ms (Views: 12.7ms | ActiveRecord: 0.2ms | Allocations: 16203)
+
+
+Started GET "/items/new" for 127.0.0.1 at 2019-07-01 10:54:34 +0300
+Processing by ItemsController#new as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/items_controller.rb:16:in `new'
+  Rendering items/new.html.erb within layouts/application
+  Rendered items/_form.html.erb (Duration: 5.9ms | Allocations: 5992)
+  Rendered items/new.html.erb within layouts/application (Duration: 6.4ms | Allocations: 6318)
+Completed 200 OK in 19ms (Views: 16.0ms | ActiveRecord: 0.1ms | Allocations: 22085)
+
+
+Started POST "/items" for 127.0.0.1 at 2019-07-01 10:54:49 +0300
+Processing by ItemsController#create as HTML
+  Parameters: {"authenticity_token"=>"Nn7g76cTm0YEXRuAilmCxIqbAoLIanfpyJUQhj46VCGgg+NSCwMt5BkCAK/le8/AceN+VyafdbLYzpQ3kpbmZg==", "item"=>{"title"=>"Final Item", "description"=>"Squid hella tote bag man braid swag cold-pressed master cleanse roof party retro meh helvetica venmo. Forage +1 before they sold out, green juice wolf etsy tilde trust fund kickstarter sustainable narwhal pitchfork tumeric iceland celiac. Tote bag raclette succulents franzen."}, "commit"=>"Create Item"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/items_controller.rb:20:in `create'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/items_controller.rb:21:in `create'
+  [1m[36mItem Create (0.6ms)[0m  [1m[32mINSERT INTO "items" ("title", "description", "created_at", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?)[0m  [["title", "Final Item"], ["description", "Squid hella tote bag man braid swag cold-pressed master cleanse roof party retro meh helvetica venmo. Forage +1 before they sold out, green juice wolf etsy tilde trust fund kickstarter sustainable narwhal pitchfork tumeric iceland celiac. Tote bag raclette succulents franzen."], ["created_at", "2019-07-01 07:54:49.424456"], ["updated_at", "2019-07-01 07:54:49.424456"], ["user_id", 1]]
+  ↳ app/controllers/items_controller.rb:21:in `create'
+  [1m[35m (4.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/items_controller.rb:21:in `create'
+Redirected to http://localhost:3000/
+Completed 302 Found in 20ms (ActiveRecord: 5.2ms | Allocations: 5432)
+
+
+Started GET "/" for 127.0.0.1 at 2019-07-01 10:54:49 +0300
+Processing by ItemsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/items_controller.rb:6:in `index'
+  Rendering items/index.html.erb within layouts/application
+  [1m[36mItem Load (0.2ms)[0m  [1m[34mSELECT "items".* FROM "items" WHERE "items"."user_id" = ? ORDER BY created_at DESC[0m  [["user_id", 1]]
+  ↳ app/views/items/index.html.erb:4
+  Rendered items/index.html.erb within layouts/application (Duration: 3.0ms | Allocations: 2053)
+Completed 200 OK in 14ms (Views: 11.8ms | ActiveRecord: 0.3ms | Allocations: 16380)
+
+
+Started PATCH "/items/12/complete" for 127.0.0.1 at 2019-07-01 10:55:26 +0300
+Processing by ItemsController#complete as HTML
+  Parameters: {"authenticity_token"=>"+8f2+INev+jFH6KSK0twTjMFt2SEkBjRauI3irEFEsKaP6DbvEyjebv65YiAb/xcSdb8Gvyc87FVuZb1l48pPA==", "id"=>"12"}
+  [1m[36mItem Load (0.1ms)[0m  [1m[34mSELECT "items".* FROM "items" WHERE "items"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/controllers/items_controller.rb:45:in `complete'
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/items_controller.rb:46:in `complete'
+  [1m[36mItem Update (0.2ms)[0m  [1m[33mUPDATE "items" SET "completed_at" = ?, "updated_at" = ? WHERE "items"."id" = ?[0m  [["completed_at", "2019-07-01 07:55:26.572305"], ["updated_at", "2019-07-01 07:55:26.572467"], ["id", 12]]
+  ↳ app/controllers/items_controller.rb:46:in `complete'
+  [1m[35m (3.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/items_controller.rb:46:in `complete'
+Redirected to http://localhost:3000/
+Completed 302 Found in 8ms (ActiveRecord: 4.1ms | Allocations: 4766)
+
+
+Started GET "/" for 127.0.0.1 at 2019-07-01 10:55:26 +0300
+Processing by ItemsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/items_controller.rb:6:in `index'
+  Rendering items/index.html.erb within layouts/application
+  [1m[36mItem Load (0.2ms)[0m  [1m[34mSELECT "items".* FROM "items" WHERE "items"."user_id" = ? ORDER BY created_at DESC[0m  [["user_id", 1]]
+  ↳ app/views/items/index.html.erb:4
+  Rendered items/index.html.erb within layouts/application (Duration: 2.6ms | Allocations: 2076)
+Completed 200 OK in 11ms (Views: 9.2ms | ActiveRecord: 0.3ms | Allocations: 16399)
+
+
+Started DELETE "/items/12" for 127.0.0.1 at 2019-07-01 10:55:30 +0300
+Processing by ItemsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"FK3hN5WohTKBH4PPRgYkZmLPJqZDxreM4gp/rrHjNKl1VbcUqrqZo//6xNXtIqh0GBxt2DvKXOzdUd7Rl2kPVw==", "id"=>"12"}
+  [1m[36mItem Load (0.1ms)[0m  [1m[34mSELECT "items".* FROM "items" WHERE "items"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/controllers/items_controller.rb:58:in `find_item'
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/items_controller.rb:40:in `destroy'
+  [1m[36mItem Destroy (0.2ms)[0m  [1m[31mDELETE FROM "items" WHERE "items"."id" = ?[0m  [["id", 12]]
+  ↳ app/controllers/items_controller.rb:40:in `destroy'
+  [1m[35m (6.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/items_controller.rb:40:in `destroy'
+Redirected to http://localhost:3000/
+Completed 302 Found in 10ms (ActiveRecord: 6.6ms | Allocations: 4229)
+
+
+Started GET "/" for 127.0.0.1 at 2019-07-01 10:55:30 +0300
+Processing by ItemsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/items_controller.rb:6:in `index'
+  Rendering items/index.html.erb within layouts/application
+  [1m[36mItem Load (0.1ms)[0m  [1m[34mSELECT "items".* FROM "items" WHERE "items"."user_id" = ? ORDER BY created_at DESC[0m  [["user_id", 1]]
+  ↳ app/views/items/index.html.erb:4
+  Rendered items/index.html.erb within layouts/application (Duration: 2.3ms | Allocations: 1848)
+Completed 200 OK in 11ms (Views: 9.2ms | ActiveRecord: 0.2ms | Allocations: 16179)
+
+
